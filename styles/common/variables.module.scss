@@ -1,0 +1,15 @@
+$primary-color: #4EB9A5;
+$darken-night : #141414;
+$dark-night : #18181B;
+$light-night : #27272AE5;
+$lighten-night : #FFFFFF19;
+$dark-snow : #E4E4E7;
+$snow : #F4F4F5;
+
+:export {
+  primaryColor: $primary-color;
+  darkenGrey: $darken-night;
+  darkGrey: $dark-night;
+  darkSnow: $dark-snow;
+  snow: $snow;
+}

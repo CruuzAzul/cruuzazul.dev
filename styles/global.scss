@@ -1,0 +1,51 @@
+@import "common/variables.module";
+
+body {
+  background-color: $dark-night;
+}
+
+h1 {
+  color: $dark-snow;
+  font-size: 7rem;
+  font-weight: 800;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+
+  nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5rem 0;
+
+    ul {
+      width: fit-content;
+      display: flex;
+      list-style: none;
+      padding: 0 1.2rem;
+      background-color: $light-night;
+      border: 1px solid $lighten-night;
+      border-radius: 50px;
+      backdrop-filter: blur(8px);
+
+      li {
+        a {
+          display: block;
+          color: $dark-snow;
+          text-decoration: none;
+          font-weight: 600;
+          font-size: 0.9rem;
+          padding: 0.7rem 1rem;
+
+          &:hover {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}

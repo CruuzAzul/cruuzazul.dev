@@ -1,0 +1,224 @@
+@import "../common/variables.module";
+
+.home {
+  padding: 0 5rem;
+
+  .background {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    > * {
+      position: absolute;
+      border-radius: 100%;
+      background: $dark-night;
+      background: linear-gradient(150deg, $dark-night 20%, $light-night 100%);
+      -webkit-box-shadow: 5px 5px 15px 5px $dark-night;
+      box-shadow: 5px 5px 15px 5px $dark-night;
+    }
+
+    .background_1 {
+      width: 100px;
+      height: 100px;
+      bottom: 200px;
+      left: 100px;
+    }
+
+    .background_2 {
+      width: 150px;
+      height: 150px;
+      bottom: -40px;
+      left: 150px;
+    }
+
+    .background_3 {
+      width: 50px;
+      height: 50px;
+      bottom: 50px;
+      right: 50px;
+    }
+
+    .background_4 {
+      width: 200px;
+      height: 200px;
+      top: 200px;
+      right: -20px;
+    }
+
+    .background_5 {
+      width: 150px;
+      height: 150px;
+      top: 200px;
+      left: 150px;
+    }
+
+    .background_6 {
+      width: 90px;
+      height: 90px;
+      bottom: 200px;
+      right: 200px;
+    }
+  }
+
+  .containerBackground {
+    z-index: -2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    .pictureContainer {
+      z-index: -2;
+      display: flex;
+      justify-content: center;
+      align-self: center;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 600px;
+        height: 600px;
+        border-radius: 100%;
+        background: $dark-night;
+        background: linear-gradient(150deg, $dark-night 20%, $light-night 100%);
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    .picture {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      max-height: 600px;
+      width: auto;
+      transform: translateX(-50%);
+    }
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .details {
+      height: 100vh;
+      width: 350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1rem;
+      color: $dark-snow;
+
+      h1 {
+        color: $primary-color;
+        font-size: 4.2rem;
+        line-height: 1.2;
+        letter-spacing: 5px;
+      }
+
+      p {
+        font-size: 0.9rem;
+        font-weight: 300;
+        text-align: justify;
+        line-height: 2rem;
+      }
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 5rem;
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+
+        img {
+          filter: drop-shadow(5px 5px 10px #000);
+        }
+
+        .label {
+          background-color: $light-night;
+          font-size: 1.3rem;
+          font-weight: 800;
+          color: $primary-color;
+          text-align: center;
+          border-radius: 10px;
+          padding: 0.8rem 2rem;
+          text-transform: uppercase;
+          border: 1px solid $lighten-night;
+          filter: drop-shadow(0px 0px 2px #000);
+        }
+      }
+
+      .socials {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 3rem;
+
+        h2 {
+          width: fit-content;
+          color: $dark-snow;
+          position: relative;
+
+          &::after {
+            content: '';
+            position: absolute;
+            bottom: -0.525rem;
+            left: -0.5rem;
+            right: -0.5rem;
+            height: 0.75rem;
+            z-index: -1;
+            background-image: url('/images/underline.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: all 0.2s ease-out;
+          }
+        }
+
+        ul {
+          display: flex;
+          gap: 1rem;
+          list-style: none;
+          padding-inline-start: 0;
+
+          li a {
+            display: inline-flex;
+            align-items: center;
+            gap: 1rem;
+            color: $dark-snow;
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.2s ease-out;
+
+            &:hover {
+              color: $primary-color;
+              transform: scale(1.2);
+              transition: all 0.2s ease-out;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
