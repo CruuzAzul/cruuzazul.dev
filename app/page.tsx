@@ -48,22 +48,22 @@ export default function Page() {
                 </Link>
               </li>
               <li>
-                <Link href="mailto:alves.mckl@gmail.com">
+                <Link href="https://www.linkedin.com/in/mickaelalves">
                   <FaLinkedin/>
                 </Link>
               </li>
               <li>
-                <Link href="mailto:alves.mckl@gmail.com">
+                <Link href="https://github.com/CruuzAzul">
                   <FaGithub/>
                 </Link>
               </li>
               <li>
-                <Link href="mailto:alves.mckl@gmail.com">
+                <Link href="https://twitter.com/CruuzAzul">
                   <FaTwitter/>
                 </Link>
               </li>
               <li>
-                <Link href="mailto:alves.mckl@gmail.com">
+                <Link href="https://dev.to/cruzazul">
                   <FaDev/>
                 </Link>
               </li>
