@@ -3,6 +3,7 @@ import Logo from "../public/images/logo.png";
 import Link from "next/link";
 import React from "react";
 import styled from '../styles/home/header.module.scss';
+import {routes} from "../config/routes";
 
 
 export default function Header() {
@@ -11,21 +12,15 @@ export default function Header() {
       <nav>
         <Image src={Logo} alt="logo" height={30}/>
         <ul>
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="/about">About</Link>
-          </li>
-          <li>
-            <Link href="/articles">Articles</Link>
-          </li>
-          <li>
-            <Link href="/projects">Projects</Link>
-          </li>
-          <li>
-            <Link href="/speaking">Speaking</Link>
-          </li>
+          {
+            routes.map((route) => (
+              route.enabled && <li key={`route_${route.name}`}>
+                <Link href={route.path}>
+                  {route.name}
+                </Link>
+              </li>
+            ))
+          }
         </ul>
         <Image src={Logo} alt="logo" height={30}/>
       </nav>
