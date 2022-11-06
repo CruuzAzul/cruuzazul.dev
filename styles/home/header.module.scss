@@ -1,5 +1,3 @@
-@import "../common/variables.module";
-
 .header {
   position: fixed;
   width: 100%;
@@ -12,29 +10,42 @@
     align-items: center;
     padding: 2rem 5rem 0;
 
-    ul {
+    ul, button {
       width: fit-content;
+      height: 45px;
       display: flex;
       list-style: none;
       padding: 0 1.2rem;
-      background-color: $light-night;
-      border: 1px solid $lighten-night;
+      background-color: var(--light-cloud);
+      border: 1px solid var(--lighten-cloud);
       border-radius: 50px;
       backdrop-filter: blur(8px);
 
       li {
         a {
           display: block;
-          color: $dark-snow;
+          color: var(--dark-moon);
           text-decoration: none;
           font-weight: 600;
           font-size: 0.9rem;
           padding: 0.7rem 1rem;
 
           &:hover {
-            color: $primary-color;
+            color: var(--primary-color);
           }
         }
+      }
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      color: var(--dark-moon);
+
+      &:hover {
+        color: var(--primary-color);
       }
     }
   }

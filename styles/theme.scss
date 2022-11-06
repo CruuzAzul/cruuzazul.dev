@@ -1,0 +1,19 @@
+:root {
+  --primary-color: #4EB9A5;
+  --darken-cloud : #141414;
+  --dark-cloud : #18181B;
+  --light-cloud : #27272AE5;
+  --lighten-cloud : #FFFFFF19;
+  --dark-moon : #E4E4E7;
+  --light-moon : #F4F4F5;
+}
+
+[data-theme='light'] {
+  --primary-color: #4EB9A5;
+  --darken-cloud : #b3b3b9;
+  --dark-cloud : #E4E4E7;
+  --light-cloud : #F4F4F5;
+  --lighten-cloud : #fbfbfb;
+  --dark-moon : #27272AE5;
+  --light-moon : #FFFFFF19;
+}

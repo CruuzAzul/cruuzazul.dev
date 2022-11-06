@@ -1,11 +1,11 @@
-@import "common/variables.module";
+@import './theme.scss';
 
 body {
-  background-color: $dark-night;
+  background-color: var(--dark-cloud);
 }
 
 h1 {
-  color: $dark-snow;
+  color: var(--);
   font-size: 7rem;
   font-weight: 800;
 }

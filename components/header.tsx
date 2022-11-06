@@ -4,6 +4,7 @@ import Link from "next/link";
 import React from "react";
 import styled from '../styles/home/header.module.scss';
 import {routes} from "../config/routes";
+import ThemeSwitcher from "./themeSwitcher";
 
 
 export default function Header() {
@@ -22,7 +23,7 @@ export default function Header() {
             ))
           }
         </ul>
-        <Image src={Logo} alt="logo" height={30}/>
+        <ThemeSwitcher />
       </nav>
     </header>
   );
