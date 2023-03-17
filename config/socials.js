@@ -1,15 +1,10 @@
-import {FaDev, FaEnvelope, FaGithub, FaLinkedin, FaTwitter} from "react-icons/fa";
+import {FaEnvelope, FaGithub, FaLinkedin, FaTwitter} from "react-icons/fa";
 
 export const socials = [
   {
-    name: 'Email',
-    url: 'mailto:alves.mckl@gmail.com',
-    icon: <FaEnvelope/>
-  },
-  {
-    name: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/mickaelalves',
-    icon: <FaLinkedin/>
+    name: 'Twitter',
+    url: 'https://twitter.com/CruuzAzul',
+    icon: <FaTwitter />
   },
   {
     name: 'GitHub',
@@ -17,13 +12,13 @@ export const socials = [
     icon: <FaGithub/>
   },
   {
-    name: 'Twitter',
-    url: 'https://twitter.com/CruuzAzul',
-    icon: <FaTwitter />
+    name: 'LinkedIn',
+    url: 'https://www.linkedin.com/in/mickaelalves',
+    icon: <FaLinkedin/>
   },
   {
-    name: 'Dev.to',
-    url: 'https://dev.to/cruzazul',
-    icon: <FaDev/>
+    name: 'Email',
+    url: 'mailto:alves.mckl@gmail.com',
+    icon: <FaEnvelope/>
   },
 ]

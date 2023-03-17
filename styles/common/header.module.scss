@@ -1,62 +1,53 @@
 .header {
-  position: fixed;
   width: 100%;
+  height: 0;
 
   nav {
-    position: sticky;
-    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 5rem 0;
+    padding-top: 2rem;
+    width: 100%;
 
-    ul, button {
-      width: fit-content;
-      height: 45px;
-      display: flex;
-      list-style: none;
-      padding: 0 1.2rem;
-      background-color: var(--light-cloud);
-      border: 1px solid var(--lighten-cloud);
-      border-radius: 50px;
-      backdrop-filter: blur(8px);
-
-      li {
-        &.selected {
-          width: 100%;
-          margin-bottom: -1px;
-          border-bottom: 1px solid transparent;
-          border-image: linear-gradient(0.25turn, transparent, var(--primary-color), transparent) 1;
-
-          a {
-            color: var(--primary-color);
-          }
-        }
-
-        a {
-          display: block;
-          color: var(--dark-moon);
-          text-decoration: none;
-          font-weight: 600;
-          font-size: 0.9rem;
-          padding: 0.7rem 1rem;
-
-          &:hover {
-            color: var(--primary-color);
-          }
-        }
-      }
-    }
-
-    button {
+    .logo {
       display: flex;
       align-items: center;
       justify-content: center;
-      cursor: pointer;
-      color: var(--dark-moon);
+      gap: 1rem;
+    }
 
-      &:hover {
-        color: var(--primary-color);
+    .socials {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+
+      h2 {
+        width: fit-content;
+        color: var(--dark-moon);
+      }
+
+      ul {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+        padding-inline-start: 0;
+
+        li a {
+          display: inline-flex;
+          width: 100%;
+          color: var(--dark-moon);
+          font-size: 1.5rem;
+          text-decoration: none;
+          font-weight: 500;
+          transition: all 0.2s ease-out;
+          margin: 0;
+
+          &:hover {
+            color: var(--primary-color);
+            transform: scale(1.2);
+            transition: all 0.2s ease-out;
+          }
+        }
       }
     }
   }

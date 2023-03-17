@@ -1,29 +1,20 @@
 @import './theme.scss';
 
+// Dimensions
+$dot-size: 3px;
+$dot-space: 40px;
+
 body {
-  background-color: var(--dark-cloud);
+  background: linear-gradient(90deg, var(--dark-cloud) ($dot-space - $dot-size), transparent 1%) center, linear-gradient(var(--dark-cloud) ($dot-space - $dot-size), transparent 1%) center, var(--light-cloud);
+  background-size: $dot-space $dot-space;
+  padding: 0 5rem;
+
+  @media (max-width: 768px) {
+    padding: 0 2rem;
+  }
 }
 
 h1 {
-  color: var(--);
   font-size: 7rem;
   font-weight: 800;
-}
-
-.underlined {
-  position: relative;
-
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: -0.525rem;
-    left: -0.5rem;
-    right: -0.5rem;
-    height: 0.75rem;
-    z-index: -1;
-    background-image: url('/images/underline.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition: all 0.2s ease-out;
-  }
 }

@@ -1,30 +1,32 @@
-'use client';
-
-import Image from "next/image";
-import Logo from "../public/images/logo.png";
 import React from "react";
+import Image from "next/image";
+import LogoDark from "../public/images/logoDark.png";
 import styled from '../styles/common/header.module.scss';
-import {routes} from "../config/routes";
-import ThemeSwitcher from "./themeSwitcher";
-import {ActiveLink} from "./activeLink";
+import {socials} from "../config/socials";
+import Link from "next/link";
 
 
 export default function Header() {
+
   return (
     <header className={styled.header}>
       <nav>
-        <Image src={Logo} alt="logo" height={30}/>
-        <ul>
-          {
-            routes.map((route) => (
-              route.enabled &&
-              <ActiveLink key={`route_${route.name}`} href={route.path} name={route.name} >
-                {route.name}
-              </ActiveLink>
-            ))
-          }
-        </ul>
-        <ThemeSwitcher />
+        <div className={styled.logo}>
+          <Image src={LogoDark} alt="logo" height={30}/>
+        </div>
+        <div className={styled.socials}>
+          <ul>
+            {
+              socials.map((social) => (
+                <li key={social.name}>
+                  <Link href={social.url}>
+                    {social.icon}
+                  </Link>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
       </nav>
     </header>
   );
