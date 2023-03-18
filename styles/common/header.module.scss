@@ -32,23 +32,43 @@
         list-style: none;
         padding-inline-start: 0;
 
-        li a {
+        li {
           display: inline-flex;
-          width: 100%;
-          color: var(--dark-moon);
-          font-size: 1.5rem;
-          text-decoration: none;
-          font-weight: 500;
-          transition: all 0.2s ease-out;
-          margin: 0;
 
-          &:hover {
-            color: var(--primary-color);
-            transform: scale(1.2);
+          a {
+            color: var(--dark-moon);
+            font-size: 1.5rem;
             transition: all 0.2s ease-out;
+            margin: 0;
+
+            &:hover {
+              color: var(--primary-color);
+              transform: scale(1.2);
+              transition: all 0.2s ease-out;
+            }
           }
         }
       }
     }
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        color: var(--dark-moon);
+        width: fit-content;
+        height: 45px;
+        list-style: none;
+        padding: 0 0.9rem;
+        background-color: var(--light-cloud);
+        border: 1px solid var(--lighten-cloud);
+        border-radius: 50px;
+        backdrop-filter: blur(8px);
+
+        &:hover {
+        cursor: pointer;
+          color: var(--primary-color);
+        }
+      }
   }
 }

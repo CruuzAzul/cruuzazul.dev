@@ -5,7 +5,7 @@ $dot-size: 3px;
 $dot-space: 40px;
 
 body {
-  background: linear-gradient(90deg, var(--dark-cloud) ($dot-space - $dot-size), transparent 1%) center, linear-gradient(var(--dark-cloud) ($dot-space - $dot-size), transparent 1%) center, var(--light-cloud);
+  background: linear-gradient(90deg, var(--dark-cloud) ($dot-space - $dot-size), transparent 1%) center, linear-gradient(var(--dark-cloud) ($dot-space - $dot-size), transparent 1%) center, var(--dot-color);
   background-size: $dot-space $dot-space;
   padding: 0 5rem;
 
