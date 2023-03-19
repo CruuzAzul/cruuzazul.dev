@@ -5,7 +5,7 @@ export default function About() {
   return (
     <>
       <div className={styled.home}>
-        <div className={styled.details}>
+        <div className={styled.hero}>
           <h2>Coming soon...</h2>
           <h1>Mickaël Alves</h1>
         </div>

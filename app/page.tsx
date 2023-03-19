@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <>
       <div className={styled.home}>
-        <div className={styled.details}>
+        <div className={styled.hero}>
           <h2>Mickaël Alves</h2>
           <h1>Web Developer</h1>
         </div>

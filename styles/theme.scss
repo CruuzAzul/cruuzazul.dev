@@ -7,7 +7,8 @@
   --dark-moon: #e4e4e7;
   --light-moon: #f4f4f5;
   --dot-color: #23272f;
-  --background-button-hover: rgba(35, 39, 47, 0.25);
+  --background-button-hover: rgba(35, 39, 47, 0.5);
+  --shadow-hsl: 196, 30%, 60%;
 }
 
 [data-theme='light'] {
@@ -19,5 +20,6 @@
   --dark-moon: #27272ae5;
   --light-moon: #ffffff19;
   --dot-color: #b9b9b9;
-  --background-button-hover: rgba(244, 244, 245, 0.25);
+  --background-button-hover: rgba(244, 244, 245, 0.75);
+  --shadow-hsl: 196, 30%, 60%;
 }
