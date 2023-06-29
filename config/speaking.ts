@@ -11,8 +11,30 @@ import DevFestDijon from '../public/images/talks/devfestDijon.png';
 import TouraineTech from '../public/images/talks/touraineTech.svg';
 import LyonJS from '../public/images/talks/lyonJs.png';
 import Bedrock from '../public/images/talks/bedrock.svg';
+import {StaticImageData} from 'next/image';
 
-export const speaking = [
+export interface Speaker {
+  name: string;
+  twitter: string;
+}
+
+export interface Conference {
+  name: string;
+  link: string;
+  date: string;
+  image: StaticImageData;
+}
+
+export interface Speaking {
+  title: string;
+  description: string;
+  image: StaticImageData;
+  format: string;
+  videoLink: string;
+  speaker: Speaker[];
+  conferences: Conference[];
+}
+export const speaking: Speaking[] = [
   {
     title: 'Appwrite est-il prêt à éteindre Firebase ? 🔥',
     description:

@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import {speaking} from '../../config/speaking';
 import styles from './TalksList.module.scss';
+import {TalkCard} from './TalkCard';
 
 export default function TalksList() {
   return (
@@ -17,16 +18,7 @@ export default function TalksList() {
             <h3>Conférences</h3>
             <div className={styles.conferencesList}>
               {talk.conferences.map((conference) => (
-                <a
-                  className={styles.conference}
-                  key={conference.name}
-                  href={conference.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image src={conference.image} alt={conference.name} />
-                  <span>{conference.date}</span>
-                </a>
+                <TalkCard conference={conference} key={conference.name} />
               ))}
             </div>
           </div>
