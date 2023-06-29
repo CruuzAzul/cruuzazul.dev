@@ -1,5 +1,8 @@
 import Appwrite from '../public/images/talks/appwrite.png';
+import Espionnage from '../public/images/talks/espionnage.png';
 import Remotion from '../public/images/talks/remotion.png';
+import NoCode from '../public/images/talks/noCode.png';
+import Flutter from '../public/images/talks/flutter.png';
 
 import VeryTechTrip from '../public/images/talks/vtt.webp';
 import Devoxx from '../public/images/talks/devoxx.png';
@@ -49,7 +52,7 @@ export const speaking: Speaking[] = [
     speaker: [
       {
         name: 'Lucas Audart',
-        twitter: 'https://mobile.twitter.com/Slocalyy',
+        twitter: 'https://twitter.com/Slocalyy',
       },
     ],
     conferences: [
@@ -109,7 +112,7 @@ export const speaking: Speaking[] = [
     speaker: [
       {
         name: 'Lucas Audart',
-        twitter: 'https://mobile.twitter.com/Slocalyy',
+        twitter: 'https://twitter.com/Slocalyy',
       },
     ],
     conferences: [
@@ -142,6 +145,94 @@ export const speaking: Speaking[] = [
         link: 'https://youtu.be/LvaHeKiwf0o',
         date: '2022',
         image: Bedrock,
+      },
+    ],
+  },
+  {
+    title: 'STOP à l’espionnage ! Comment disparaître d’internet ? 🕵🏼‍',
+    description:
+      'Vous en avez marre de vous sentir traqué sur Internet ? 😒 Nous aussi ! Mais est-il réellement possible de nos jours de devenir un véritable ninja digital ? 🥷🏻 Et si pour protéger votre vie privée en ligne, il fallait tout d’abord comprendre qui a accès à vos données et ce qu’ils peuvent faire avec ?\n' +
+      '\n' +
+      'Nous allons vous apprendre comment être un vrai pro de la confidentialité et de la sécurité des données, mais surtout comment devenir anonyme en ligne et éviter les curieux… 👀 Sortez vos loupes et suivez-nous dans cette enquête pour reprendre le contrôle de votre vie numérique !\n' +
+      '\n' +
+      'Et si vous êtes chanceux, nous vous dévoilerons peut-être quelques secrets de ninja pour échapper aux espions ! Venez nous rejoindre et apprenez comment devenir le maître du camouflage numérique ! 😶‍🌫️',
+    image: Espionnage,
+    format: 'Talk (50 minutes)',
+    videoLink: 'https://youtu.be/Tj1yPUsA720',
+    speaker: [
+      {
+        name: 'Etienne Idoux',
+        twitter: 'https://twitter.com/PopsIDX',
+      },
+    ],
+    conferences: [
+      {
+        name: 'Breizhcamp',
+        link: 'https://www.breizhcamp.org/conference/programme/',
+        date: '2023',
+        image: Breizhcamp,
+      },
+      {
+        name: 'Conférence interne Zenika',
+        link: 'https://youtu.be/Tj1yPUsA720',
+        date: '2023',
+        image: Zenika,
+      },
+    ],
+  },
+  {
+    title: "J'adore les développeurs, dans 2, 3 ans il y en aura plus 👨🏻‍💻",
+    description:
+      'Entre nous, avons-nous encore besoin de développeurs ? 🤔\n' +
+      '\n' +
+      "Voilà maintenant plusieurs années que tout le monde arpente le web à la recherche d'outils pour remplacer les développeurs. Souvent vu comme les rois du pétrole, avec une centaine de messages LinkedIn en attente, leur parcours semble se dérouler sans encombre... Mais il parait que toute les bonnes choses ont une fin 🏁\n" +
+      '\n' +
+      "Avec l’arrivée du no-code, du low-code, de l’intelligence artificielle, et de plein d'autres outils, la peur règne dans le monde des accros aux lignes de code ! 😰\n" +
+      '\n' +
+      "Sont-ils vraiment indispensables ? Pourrons-nous enfin nous en passer ? Serait-ce une espèce en voie d'extinction ?\n" +
+      '\n' +
+      'Venez mener l’enquête avec nous 🕵🏼‍♂️',
+    image: NoCode,
+    format: 'Quicky (20 minutes)',
+    videoLink: 'https://youtu.be/mA6dmVYBfdA',
+    speaker: [
+      {
+        name: 'Audart Lucas',
+        twitter: 'https://twitter.com/Slocalyy',
+      },
+    ],
+    conferences: [
+      {
+        name: 'Conférence interne Zenika',
+        link: 'https://youtu.be/mA6dmVYBfdA',
+        date: '2023',
+        image: Zenika,
+      },
+    ],
+  },
+  {
+    title: 'Flutter, le futur du web ? 🐦',
+    description:
+      'Vous avez sûrement déjà entendu parler de Flutter une des dernière technologie de Google ! 🐦 \n' +
+      '\n' +
+      "Elle permet de générer des applications pour tous les écrans à partir d'une seule base de code ! On parle bien de développer d’un coup des applications pour Android, iOS, Linux, Mac, ou encore Windows ! 🪄\n" +
+      '\n' +
+      'Mais saviez-vous que vous pouvez aussi avoir votre application web à partir de la même base de code ? Peut-on vraiment toucher plus d’utilisateurs avec une expérience similaire à celle sur mobile ? Est-ce une alternative assez solide pour révolutionner le développement web ? 🌏',
+    image: Flutter,
+    format: 'Quicky (20 minutes)',
+    videoLink: 'https://youtu.be/mdGMBIYmi6c',
+    speaker: [
+      {
+        name: 'Audart Lucas',
+        twitter: 'https://twitter.com/Slocalyy',
+      },
+    ],
+    conferences: [
+      {
+        name: 'Conférence interne Zenika',
+        link: 'https://youtu.be/mdGMBIYmi6c',
+        date: '2022',
+        image: Zenika,
       },
     ],
   },
