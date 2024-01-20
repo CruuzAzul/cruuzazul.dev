@@ -167,6 +167,18 @@ export const speaking: Speaking[] = [
     ],
     conferences: [
       {
+        name: 'SnowCamp',
+        link: '',
+        date: 'SOON',
+        image: SnowCamp,
+      },
+      {
+        name: 'Touraine Tech',
+        link: '',
+        date: 'SOON',
+        image: TouraineTech,
+      },
+      {
         name: 'Breizhcamp',
         link: 'https://www.breizhcamp.org/conference/programme/',
         date: '2023',

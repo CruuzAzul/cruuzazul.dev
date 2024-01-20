@@ -1,10 +1,10 @@
-import {FaEnvelope, FaGithub, FaLinkedin, FaTwitter} from 'react-icons/fa';
+import {FaEnvelope, FaGithub, FaLinkedin, FaXTwitter} from "react-icons/fa6";
 
 export const socials = [
   {
     name: 'Twitter',
     url: 'https://twitter.com/CruuzAzul',
-    icon: <FaTwitter />,
+    icon: <FaXTwitter />,
   },
   {
     name: 'GitHub',

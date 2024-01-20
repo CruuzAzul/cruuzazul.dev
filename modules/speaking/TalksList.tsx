@@ -11,7 +11,11 @@ export default function TalksList() {
         <div className={styles.talk} key={talk.title}>
           <h2>{talk.title}</h2>
           <div className={styles.details}>
-            <p>{talk.description}</p>
+            <div className={styles.infos}>
+              <div className={styles.description}>
+                {talk.description}
+              </div>
+            </div>
             <Image src={talk.image} alt={talk.title} width={320} height={180} />
           </div>
           <div className={styles.conferences}>
