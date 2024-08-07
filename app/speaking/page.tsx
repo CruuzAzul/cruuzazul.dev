@@ -1,15 +1,12 @@
 import React from 'react';
 import TalksList from '../../modules/speaking/TalksList';
 import {Home} from '../../modules/home/Home';
+import {MainTitle} from '../../modules/common/mainTitle/MainTitle';
 
-import styles from '../../modules/common/layout.module.scss'
-
-export default function Speaking() {
+export default function SpeakingPage() {
   return (
     <Home>
-      <div className={styles.mainTitlePage}>
-        <h2>Conferences</h2>
-      </div>
+      <MainTitle title="Conférences" />
       <TalksList />
     </Home>
   );

@@ -1,8 +1,16 @@
 .header {
+  background-color: white;
+  background-image: url("/images/noise.png");
+  background-size: 15%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 30px 5rem 30px;
 
   @media (max-width: 480px) {
     padding-left: 1rem;

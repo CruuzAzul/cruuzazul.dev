@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link';
 import styles from './Header.module.scss';
 import {IconLink} from '../navigation/links/IconLink';

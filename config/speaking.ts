@@ -7,21 +7,21 @@ import AppwriteWorkshop from '../public/images/talks/appwrite-workshop.png';
 import v0 from '../public/images/talks/v0.png';
 import Soon from '../public/images/talks/soon.png';
 
-import VeryTechTrip from '../public/images/talks/vtt.png';
-import Devoxx from '../public/images/talks/devoxx.png';
-import Mixit from '../public/images/talks/mixit.svg';
-import SnowCamp from '../public/images/talks/snowcamp.webp';
-import Zenika from '../public/images/talks/zenika.svg';
-import Breizhcamp from '../public/images/talks/breizhcamp.svg';
-import DevFestDijon from '../public/images/talks/devfestDijon.png';
-import TouraineTech from '../public/images/talks/touraineTech.svg';
-import LyonJS from '../public/images/talks/lyonJs.svg';
-import Bedrock from '../public/images/talks/bedrock.svg';
-import DevfestLille from '../public/images/talks/devfest-lille.png';
-import DevfestStrasbourg2023 from '../public/images/talks/devfest-strasbourg-2023.png';
-import DevfestStrasbourg2024 from '../public/images/talks/devfest-strasbourg-2024.png';
-import DevfestNantes2023 from '../public/images/talks/devfest-nantes-2023.svg';
-import DevfestNantes2024 from '../public/images/talks/devfest-nantes-2024.svg';
+import VeryTechTrip from '../public/images/conferenceLogos/vtt.png';
+import Devoxx from '../public/images/conferenceLogos/devoxx.png';
+import Mixit from '../public/images/conferenceLogos/mixit.svg';
+import SnowCamp from '../public/images/conferenceLogos/snowcamp.webp';
+import Zenika from '../public/images/conferenceLogos/zenika.svg';
+import Breizhcamp from '../public/images/conferenceLogos/breizhcamp.svg';
+import DevFestDijon from '../public/images/conferenceLogos/devfestDijon.png';
+import TouraineTech from '../public/images/conferenceLogos/touraineTech.svg';
+import LyonJS from '../public/images/conferenceLogos/lyonJs.svg';
+import Bedrock from '../public/images/conferenceLogos/bedrock.svg';
+import DevfestLille from '../public/images/conferenceLogos/devfest-lille.png';
+import DevfestStrasbourg2023 from '../public/images/conferenceLogos/devfest-strasbourg-2023.png';
+import DevfestStrasbourg2024 from '../public/images/conferenceLogos/devfest-strasbourg-2024.png';
+import DevfestNantes2023 from '../public/images/conferenceLogos/devfest-nantes-2023.svg';
+import DevfestNantes2024 from '../public/images/conferenceLogos/devfest-nantes-2024.svg';
 
 import {StaticImageData} from 'next/image';
 
@@ -38,6 +38,7 @@ export interface Conference {
 }
 
 export interface Speaking {
+  id: string;
   title: string;
   description: string;
   image: StaticImageData;
@@ -46,8 +47,10 @@ export interface Speaking {
   speaker: Speaker[];
   conferences: Conference[];
 }
+
 export const speaking: Speaking[] = [
   {
+    id: '1',
     title: 'React Compiler : Easier, Better, Faster, Stronger 🤖',
     description:
       'Imaginez une nouvelle version de React encore plus attendue qu’un album des Daft Punk 💽 Avec les nouveaux hooks, les actions, les React Server Components et bien plus, la version 19 de React s’annonce révolutionnaire ! 🤯 Et c’est sans compter le hit de la version : Le React Compiler !\n' +
@@ -74,13 +77,14 @@ export const speaking: Speaking[] = [
     ],
   },
   {
+    id: '2',
     title: 'Appwrite est-il prêt à éteindre Firebase ? 🔥',
     description:
-      "Est-ce que Firebase vous dit quelque chose ? Vous en avez sûrement entendu parlé et vous l'avez peut-être déjà utilisé, et pour le coup, c'est normal ! Voilà maintenant plusieurs années que de nombreux développeurs l'utilisent pour faciliter la création de back-end scalable et performant.\n" +
+      "Est-ce que Firebase vous dit quelque chose ? Vous en avez sûrement entendu parler et vous l'avez peut-être déjà utilisé, et pour le coup, c'est normal ! Voilà maintenant plusieurs années que de nombreux développeurs l'utilisent pour faciliter la création de back-end scalable et performant.\n" +
       '\n' +
       "Mais avez-vous déjà entendu parler d'Appwrite ❓\n" +
       '\n' +
-      'Peut importe votre réponse, venez découvrir avec nous le duel entre Appwrite la jeune solution open-source et Firebase la flamme de Google 🥊',
+      'Peu importe votre réponse, venez découvrir avec nous le duel entre Appwrite la jeune solution open-source et Firebase la flamme de Google 🥊',
     image: Appwrite,
     format: 'Talk (50 minutes)',
     videoLink: 'https://mixitconf.org/2022/appwrite-est-il-pret-a-eteindre-firebase-',
@@ -142,6 +146,7 @@ export const speaking: Speaking[] = [
     ],
   },
   {
+    id: '3',
     title: "Remotion : le 7ème art à portée de composants web et d'API 🎬",
     description:
       "Remotion est une lib open source publiée en 2019, qui permet la génération de gif, d'animations, de vidéos de manière programmatique, à partir de composant React ! Nous allons vous partager notre aventure de création de trailer vidéo dans le contexte des plateformes de streaming sur lesquels nous travaillons chez Bedrock. Nostalgique des programmes du début des années 2000, on a essayé de reproduire quelques bandes d'annonces pour vous rappelez des souvenirs et vous montrer à quel point c'est facile !\n" +
@@ -190,6 +195,7 @@ export const speaking: Speaking[] = [
     ],
   },
   {
+    id: '4',
     title: 'STOP à l’espionnage ! Comment disparaître d’internet ? 🕵🏼‍',
     description:
       'Vous en avez marre de vous sentir traqué sur Internet ? 😒 Nous aussi ! Mais est-il réellement possible de nos jours de devenir un véritable ninja digital ? 🥷🏻 Et si pour protéger votre vie privée en ligne, il fallait tout d’abord comprendre qui a accès à vos données et ce qu’ils peuvent faire avec ?\n' +
@@ -246,6 +252,7 @@ export const speaking: Speaking[] = [
     ],
   },
   {
+    id: '5',
     title: "Voyage au coeur d'Appwrite : le backend open-source qui challenge Firebase 🧳",
     description:
       'Bienvenue à bord du grand voyage, destination : l\'univers du backend open-source ! Êtes vous prêts pour cette aventure au cœur d\'Appwrite, la solution qui défie le géant déjà bien connu Firebase ? 🛫\n' +
@@ -296,6 +303,7 @@ export const speaking: Speaking[] = [
     ],
   },
   {
+    id: '6',
     title: "V0 : travailler avec un consultant frontend dans sa forme finale 🤖",
     description:
       'Hello à toutes et tous ! 🙂 Après la perte de notre précieux consultant frontend, Double M, nous sommes à la recherche de notre prochain héros, et nous pensons l\'avoir trouvé avec V0... 🤖\n' +
@@ -330,6 +338,7 @@ export const speaking: Speaking[] = [
     ],
   },
   {
+    id: '7',
     title: "J'adore les développeurs, dans 2, 3 ans il y en aura plus 👨🏻‍💻",
     description:
       'Entre nous, avons-nous encore besoin de développeurs ? 🤔\n' +
@@ -360,6 +369,7 @@ export const speaking: Speaking[] = [
     ],
   },
   {
+    id: '8',
     title: 'Flutter, le futur du web ? 🐦',
     description:
       'Vous avez sûrement déjà entendu parler de Flutter une des dernière technologie de Google ! 🐦 \n' +

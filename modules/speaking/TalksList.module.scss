@@ -1,119 +1,95 @@
 .talks {
+  max-width: 1300px;
   padding: 3rem 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 150px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10rem;
 
-  .talk {
-    max-width: 900px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
+  .talkElem {
+    width: 100%;
 
-    h2 {
-      width: 90%;
-      display: inline-flex;
-      flex-direction: column;
-      font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 1rem;
-      text-align: center;
-      text-wrap: balance;
+    &:nth-child(2n+2) {
+      margin-top: 8rem;
+    }
 
-      &:after {
-        content: '';
-        display: inline-block;
-        width: 60%;
-        height: 4px;
-        position: relative;
-        bottom: -6px;
-        left: 50%;
-        transform: translateX(-50%);
-        border-radius: 4px;
-        background-color: var(--primary-color);
+    img {
+      position: relative;
+      width: 300px;
+      height: auto;
+      margin: 0 5px -100px;
+      border-radius: 8px;
+      box-shadow: 0 10px 40px 0 rgba(14, 42, 90, 0.55);
+      left: 50%;
+      transform: translateX(-50%);
+      aspect-ratio: auto;
+
+      @media (max-width: 768px) {
+        display: none;
       }
     }
 
-    .details {
-      overflow: hidden;
+    .card {
       width: 100%;
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
+      background-color: var(--lighten-cloud);
+      box-shadow: 0 20px 60px 0 rgba(90, 116, 148, 0.4);
+      border-radius: 10px;
+      padding: 170px 35px 90px;
       gap: 3rem;
 
-      img {
-        margin: 5px;
-        border-radius: 8px;
-        filter: drop-shadow(0 0 3px var(--dark-moon));
-
-        @media (max-width: 768px) {
-          display: none;
-        }
-      }
-
-      .infos {
-        display: flex;
+      h2 {
+        width: 100%;
+        display: inline-flex;
         flex-direction: column;
-        justify-content: space-between;
-
-        a {
-          width: fit-content;
-          border-radius: 30px;
-          border: 2px solid transparent;
-          padding: 0.5rem 2rem;
-          background-color: #4eb9a5;
-        }
-      }
-
-      .description {
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        -webkit-line-clamp: 7;
-        font-size: 1.1rem;
-        font-weight: 400;
-        line-height: 1.5;
-      }
-    }
-
-    .conferences {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 2rem;
-
-      h3 {
         font-size: 1.5rem;
         font-weight: 700;
-        text-align: center;
-        text-transform: uppercase;
         margin-bottom: 1rem;
+        text-align: center;
+        text-wrap: balance;
 
         &:after {
           content: '';
           display: inline-block;
           width: 60%;
-          height: 3px;
+          height: 4px;
           position: relative;
-          bottom: -2px;
+          bottom: -6px;
+          left: 50%;
+          transform: translateX(-50%);
           border-radius: 4px;
           background-color: var(--primary-color);
         }
       }
+    }
 
-      .conferencesList {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        max-height: 1200px;
-        gap: min(3vw, 24px);
+    .pageLink {
+      display: flex;
+      justify-content: center;
+      width: 200px;
+      position: relative;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: var(--primary-color);
+      color: var(--lighten-cloud);
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.2rem;
+      padding: 1rem 1.5rem;
+      box-shadow: 0 5px 40px 0 rgba(14, 42, 90, 0.55);
+
+      &:hover::after {
+        content: '';
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        width: 100%;
+        border-bottom: 2px solid transparent;
+        border-image: linear-gradient(0.25turn, transparent, var(--primary-color), transparent) 1;
       }
     }
   }
+
 }

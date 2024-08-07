@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
-import {Conference} from '../../config/speaking';
-import styles from './TalkCard.module.scss';
+import {Conference} from '../../../config/speaking';
+import styles from './ConferenceCard.module.scss';
 
 export const TalkCard = ({conference}: {conference: Conference}) => (
   <a className={styles.talkCard} key={conference.name} href={conference.link} target="_blank" rel="noopener noreferrer">
