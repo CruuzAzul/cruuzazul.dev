@@ -11,9 +11,19 @@
   width: 100%;
   z-index: 1000;
   padding: 30px 5rem 30px;
+  transition: box-shadow 0.5s ease-in-out;
 
   @media (max-width: 480px) {
     padding-left: 1rem;
+  }
+
+  &.scrolled {
+    box-shadow: rgba(0, 0, 0, 0.45) 0 0 40px -20px;
+  }
+
+  .picture {
+    border-radius: 50%;
+    border: 3px solid var(--primary-color);
   }
 }
 
