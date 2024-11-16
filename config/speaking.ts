@@ -69,6 +69,12 @@ export const speaking: Speaking[] = [
     ],
     conferences: [
       {
+        name: 'Touraine Tech',
+        link: '',
+        date: '2025',
+        image: TouraineTech,
+      },
+      {
         name: 'Devfest Nantes',
         link: 'https://devfest.gdgnantes.com/sessions/react_compiler___easier__better__faster__stronger___/',
         date: '2024',
@@ -233,7 +239,7 @@ export const speaking: Speaking[] = [
       },
       {
         name: 'Touraine Tech',
-        link: '',
+        link: 'https://2024.touraine.tech/talk/xlORqKhzTikvV2R3N9q5',
         date: '2024',
         image: TouraineTech,
       },
