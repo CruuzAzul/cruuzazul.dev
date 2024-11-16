@@ -1,22 +1,129 @@
 .heroHome {
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
   width: 100vw;
-  height: calc(100vh - 100px);
-  gap: 5rem;
+  min-height: calc(100vh - 100px);
   color: var(--dark-moon);
-  padding: 4rem 10rem;
+  padding: var(--header-height) 10rem 4rem;
   background-image: radial-gradient(ellipse 800px 50% at 60% 50%, hsla(var(--shadow-hsl), 0.08), transparent);
 
-  @media (max-width: 1500px) {
-    padding: 4rem 5rem;
+  .heroInfo {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+
+    @media (max-width: 1200px) {
+      gap: 1rem;
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      justify-content: center;
+      padding-top: var(--header-height);
+    }
+
+    @media (max-width: 480px) {
+      align-items: center;
+    }
+
+    .intro {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 3rem 0;
+      gap: 1rem;
+
+      @media (max-width: 1200px) {
+        flex: 0;
+        justify-content: flex-start;
+        padding: 1rem 0;
+      }
+
+      h1 {
+        font-size: 4rem;
+        line-height: 1.2;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        color: var(--dark-moon);
+
+        span {
+          background: linear-gradient(to right, var(--primary-color), var(--secondary-color), var(--primary-color));
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
+        @media (max-width: 768px) {
+          font-size: 2.5rem;
+        }
+
+        @media (max-width: 480px) {
+          text-align: center;
+          font-size: 2rem;
+        }
+      }
+
+      p {
+        text-wrap: balance;
+        width: 75%;
+        font-size: 1.25rem;
+        font-weight: 500;
+        color: var(--dark-moon);
+
+        strong {
+          background: linear-gradient(to right, var(--primary-color), var(--secondary-color), var(--primary-color));
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+
+        @media (max-width: 480px) {
+          text-align: center;
+          width: 100%;
+        }
+      }
+    }
+
+    .profilePicture {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: min(35%, 400px);
+      height: min-content;
+      padding: 0.5rem;
+      background: linear-gradient(to right, var(--lighten-cloud), var(--lighten-cloud)) padding-box,
+      linear-gradient(to right, var(--primary-color), var(--secondary-color)) border-box;
+      border-radius: 30px;
+      border: 2px solid transparent;
+
+      @media (max-width: 1200px) {
+        width: 250px;
+        justify-content: flex-start;
+      }
+
+      @media (max-width: 480px) {
+        width: 150px;
+      }
+
+      img {
+        height: auto;
+        padding: 1rem;
+        border-radius: 30px;
+
+        @media (max-width: 1200px) {
+          padding: 0.2rem;
+        }
+      }
+    }
   }
 
-  @media (max-width: 1200px) {
-    gap: 1rem;
-    flex-direction: column-reverse;
-    align-items: flex-start;
-    justify-content: center;
+  @media (max-width: 1500px) {
+    padding: 4rem 5rem 0;
   }
 
   @media (max-width: 768px) {
@@ -24,102 +131,6 @@
   }
 
   @media (max-width: 480px) {
-    align-items: center;
-    padding: 0 1rem;
-  }
-
-  .intro {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 3rem 0;
-    gap: 1rem;
-
-    @media (max-width: 1200px) {
-      flex: 0;
-      justify-content: flex-start;
-      padding: 1rem 0;
-    }
-
-    h1 {
-      font-size: 4rem;
-      line-height: 1.2;
-      letter-spacing: 5px;
-      text-transform: uppercase;
-      display: flex;
-      flex-direction: column;
-      color: var(--dark-moon);
-
-      span {
-        background: linear-gradient(to right, var(--primary-color), var(--secondary-color), var(--primary-color));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-
-      @media (max-width: 768px) {
-        font-size: 2.5rem;
-      }
-
-      @media (max-width: 480px) {
-        text-align: center;
-        font-size: 2rem;
-      }
-    }
-
-    p {
-      text-wrap: balance;
-      width: 75%;
-      font-size: 1.25rem;
-      font-weight: 500;
-      color: var(--dark-moon);
-
-      strong {
-        background: linear-gradient(to right, var(--primary-color), var(--secondary-color), var(--primary-color));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-
-      @media (max-width: 768px) {
-        width: 100%;
-      }
-
-      @media (max-width: 480px) {
-        text-align: center;
-        width: 100%;
-      }
-    }
-  }
-
-  .profilePicture {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: min(35%, 600px);
-    height: min-content;
-    padding: 0.5rem;
-    background: linear-gradient(to right, var(--lighten-cloud), var(--lighten-cloud)) padding-box,
-    linear-gradient(to right, var(--primary-color), var(--secondary-color)) border-box;
-    border-radius: 30px;
-    border: 2px solid transparent;
-
-    @media (max-width: 1200px) {
-      width: 250px;
-      justify-content: flex-start;
-    }
-
-    @media (max-width: 480px) {
-      width: 150px;
-    }
-
-    img {
-      height: auto;
-      padding: 1rem;
-      border-radius: 30px;
-
-      @media (max-width: 1200px) {
-        padding: 0.2rem;
-      }
-    }
+    justify-content: flex-start;
   }
 }

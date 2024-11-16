@@ -9,8 +9,8 @@ export const metadata: Metadata = {
     "Currently a web consultant at @Zenika 🔴, I also enjoy sharing my knowledge through teaching and speaking at conferences.\n" +
     "I’m a co-organizer of @LyonJS 🦁, an @Appwrite Hero 🦸🏼‍♂️, and a @Remotion Expert 🎬\n",
   icons: {
-    icon: 'images/logo.png',
-    apple: 'images/logo.png',
+    icon: 'images/mickael-alves.png',
+    apple: 'images/mickael-alves.png',
   },
 };
 
