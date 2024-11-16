@@ -1,11 +1,11 @@
 import Appwrite from '../public/images/talks/appwrite.png';
 import Espionnage from '../public/images/talks/espionnage.png';
 import Remotion from '../public/images/talks/remotion.png';
-import NoCode from '../public/images/talks/noCode.png';
+import NoCode from '../public/images/talks/no-code.png';
 import Flutter from '../public/images/talks/flutter.png';
 import AppwriteWorkshop from '../public/images/talks/appwrite-workshop.png';
 import v0 from '../public/images/talks/v0.png';
-import Soon from '../public/images/talks/soon.png';
+import ReactCompiler from '../public/images/talks/react-compiler.png';
 
 import VeryTechTrip from '../public/images/conferenceLogos/vtt.png';
 import Devoxx from '../public/images/conferenceLogos/devoxx.png';
@@ -58,7 +58,7 @@ export const speaking: Speaking[] = [
       'Au travers d’exemples concrets et de démonstrations, parcourons ensemble cette feature inédite pour en comprendre le besoin initial et son fonctionnement ⚙️ En quelques notes de code, découvrons comment React vous promet désormais performance et optimisation en toute facilité !\n' +
       '\n' +
       'Le React Compiler, véritable chef-d\'œuvre de cette mise à jour, s\'annonce comme un remix parfait pour vos applications passées et futures ! Venez vibrer avec nous et laissez-vous emporter par le rythme du React Compiler ! 🚀\n',
-    image: Soon,
+    image: ReactCompiler,
     format: 'Talk (50 minutes)',
     videoLink: 'https://mixitconf.org/2022/appwrite-est-il-pret-a-eteindre-firebase-',
     speaker: [
