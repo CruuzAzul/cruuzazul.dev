@@ -1,6 +1,11 @@
-import {FaEnvelope, FaGithub, FaLinkedin, FaXTwitter} from "react-icons/fa6";
+import {FaBluesky, FaEnvelope, FaGithub, FaLinkedin, FaXTwitter} from "react-icons/fa6";
 
 export const socials = [
+  {
+    name: 'Bluesky',
+    url: 'https://bsky.app/profile/cruuzazul.dev',
+    icon: <FaBluesky />,
+  },
   {
     name: 'Twitter',
     url: 'https://twitter.com/CruuzAzul',

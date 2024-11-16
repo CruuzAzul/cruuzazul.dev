@@ -8,7 +8,7 @@ export const IconLink: FC<HTMLAttributes<HTMLElement>> = ({className}) => (
   <ul className={classNames(styles.socialLinks, className)}>
     {socials.map((social) => (
       <li key={social.name}>
-        <Link href={social.url}>{social.icon}</Link>
+        <Link href={social.url} target="_blank" rel="noopener noreferrer">{social.icon}</Link>
       </li>
     ))}
   </ul>
