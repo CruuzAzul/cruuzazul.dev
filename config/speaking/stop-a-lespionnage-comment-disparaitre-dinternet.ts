@@ -16,7 +16,7 @@ export const StopALespionnageCommentDisparaitreDinternet = {
     '\n' +
     'Et si vous êtes chanceux, nous vous dévoilerons peut-être quelques secrets de ninja pour échapper aux espions ! Venez nous rejoindre et apprenez comment devenir le maître du camouflage numérique ! 😶‍🌫️',
   image: Espionnage,
-  format: 'Talk (50 minutes)',
+  format: 'TalkData (50 minutes)',
   videoId: 'pHP3MC1r6Ro',
   speaker: [
     {

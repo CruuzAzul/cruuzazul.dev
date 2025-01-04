@@ -2,15 +2,15 @@ import styles from './Talk.module.scss';
 import Image from 'next/image';
 import {TalkCard} from './TalkCard';
 import React from 'react';
-import {Speaking} from '../../../config/speaking/speaking';
+import {Talk} from '../../../config/speaking/speaking';
 import Link from 'next/link';
 import {FaAnglesLeft} from 'react-icons/fa6';
 
 interface TalkProps {
-  talkData: Speaking;
+  talkData: Talk;
 }
 
-export const Talk = ({talkData}: TalkProps) => {
+export const TalkData = ({talkData}: TalkProps) => {
   return (
     <section className={styles.talkRoot}>
       <div className={styles.talk}>

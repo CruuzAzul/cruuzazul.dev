@@ -18,7 +18,7 @@ export const AppwriteEstIlPretAEteindreFirebase = {
     '\n' +
     'Peu importe votre réponse, venez découvrir avec nous le duel entre Appwrite la jeune solution open-source et Firebase la flamme de Google 🥊',
   image: Appwrite,
-  format: 'Talk (50 minutes)',
+  format: 'TalkData (50 minutes)',
   videoId: '_QYXiq2fmS0',
   speaker: [
     {

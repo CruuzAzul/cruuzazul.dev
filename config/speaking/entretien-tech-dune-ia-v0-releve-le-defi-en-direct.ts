@@ -4,7 +4,7 @@ import Zenika from '../../public/images/conferenceLogos/zenika.svg';
 
 export const EntretienTechDuneIaV0ReleveLeDefiEnDirect = {
   id: '6',
-  title: "Entretien tech d’une IA : v0 relève le défi en direct 🤖",
+  title: "Entretien tech d’une IA\u00A0: v0 relève le défi en direct 🤖",
   description:
     'Les temps sont durs, et les développeurs experts se font rares… Aujourd\'hui, nous sommes en quête de notre prochain héros, et il semblerait que l\'IA v0 soit le candidat idéal… 🤖\n' +
     '\n' +

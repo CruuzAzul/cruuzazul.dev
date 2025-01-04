@@ -7,7 +7,7 @@ import Breizhcamp from '../../public/images/conferenceLogos/breizhcamp.svg';
 
 export const VoyageAuCoeurDappwrite = {
   id: '5',
-  title: "Voyage au coeur d'Appwrite : le backend open-source qui challenge Firebase 🧳",
+  title: "Voyage au coeur d'Appwrite\u00A0: le backend open-source qui challenge Firebase 🧳",
   description:
     'Bienvenue à bord du grand voyage, destination : l\'univers du backend open-source ! Êtes vous prêts pour cette aventure au cœur d\'Appwrite, la solution qui défie le géant déjà bien connu Firebase ? 🛫\n' +
     '\n' +

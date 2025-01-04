@@ -1,7 +1,8 @@
 import Flutter from '../../public/images/talks/flutter.png';
 import Zenika from '../../public/images/conferenceLogos/zenika.svg';
+import {Talk} from './speaking';
 
-export const FlutterLeFuturDuWeb = {
+export const FlutterLeFuturDuWeb: Talk = {
   id: '8',
   title: 'Flutter, le futur du web ? 🐦',
   description:
