@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 import {podcasts} from './types/speaking';
 import styles from './SpeakingList.module.scss';
 import Link from 'next/link';
@@ -15,7 +14,16 @@ export default function PodcastList() {
           <div className={styles.speakingElem} key={podcast.title}>
             <h2>{podcast.title}</h2>
             <p>{podcast.description}</p>
-            <Image src={podcast.image} alt={podcast.title} width={320} height={180} />
+            <div className={styles.video}>
+              <iframe
+                className={styles.videoIframe}
+                src={`https://www.youtube.com/embed/${podcast.videoId}`}
+                title={podcast.title}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                loading="lazy"
+              />
+            </div>
             <Link href={`/speaking/${slugElementTitle(podcast)}`} key={podcast.id} className={styles.pageLink}>
               En savoir plus
             </Link>

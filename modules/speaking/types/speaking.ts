@@ -8,7 +8,7 @@ import {EntretienTechDuneIaV0ReleveLeDefiEnDirect} from '../../../config/speakin
 import {JadoreLesDeveloppeursDans23AnsIlYEnAuraPlus} from '../../../config/speaking/jadore-les-developpeurs-dans-2-3-ans-il-y-en-aura-plus';
 import {FlutterLeFuturDuWeb} from '../../../config/speaking/flutter-le-futur-du-web';
 
-import {FaSpotify, FaApple, FaDeezer, FaYoutube, FaChalkboard} from 'react-icons/fa6';
+import {FaSpotify, FaApple, FaDeezer, FaYoutube, FaPersonChalkboard} from 'react-icons/fa6';
 import {HypeDrivenDevelopment} from '../../../config/speaking/hype-driven-development';
 import {CommunautesIt} from '../../../config/speaking/communautes-it';
 import {IconType} from 'react-icons';
@@ -29,7 +29,7 @@ export interface Conference {
 type Format = 'Talk' | 'Workshop' | 'Quicky' | 'Podcast';
 
 export const formatData: Record<Format, IconType> = {
-  Talk: FaChalkboard,
+  Talk: FaPersonChalkboard,
   Workshop: FaCode,
   Quicky: FaBolt,
   Podcast: FaPodcast,
