@@ -1,7 +1,8 @@
 import NoCode from '../../public/images/talks/no-code.png';
 import Zenika from '../../public/images/conferenceLogos/zenika.svg';
+import {Talk} from './speaking';
 
-export const JadoreLesDeveloppeursDans23AnsIlYEnAuraPlus = {
+export const JadoreLesDeveloppeursDans23AnsIlYEnAuraPlus: Talk = {
   id: '7',
   title: "J'adore les développeurs, dans 2, 3 ans il y en aura plus 👨🏻‍💻",
   description:
@@ -15,7 +16,7 @@ export const JadoreLesDeveloppeursDans23AnsIlYEnAuraPlus = {
     '\n' +
     'Venez mener l’enquête avec nous 🕵🏼‍♂️',
   image: NoCode,
-  format: 'Quicky (20 minutes)',
+  format: 'Quicky',
   videoId: 'mA6dmVYBfdA',
   speaker: [
     {

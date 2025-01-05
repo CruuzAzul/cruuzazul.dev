@@ -4,8 +4,9 @@ import SnowCamp from '../../public/images/conferenceLogos/snowcamp.webp';
 import TouraineTech from '../../public/images/conferenceLogos/touraineTech.svg';
 import LyonJS from '../../public/images/conferenceLogos/lyonJs.svg';
 import Bedrock from '../../public/images/conferenceLogos/bedrock.svg';
+import {Talk} from './speaking';
 
-export const RemotionLe7emeArtAPorteeDeComposantsWebEtDApi = {
+export const RemotionLe7emeArtAPorteeDeComposantsWebEtDApi: Talk = {
   id: '3',
   title: "Remotion\u00A0: le 7ème art à portée de composants web et d'API 🎬",
   description:
@@ -13,7 +14,7 @@ export const RemotionLe7emeArtAPorteeDeComposantsWebEtDApi = {
     '\n' +
     'Installez-vous et préparez vos pop-corn la séance va commencer ! 🍿',
   image: Remotion,
-  format: 'Talk (50 minutes)',
+  format: 'Talk',
   videoId: 'mr_-LTkLl8A',
   speaker: [
     {

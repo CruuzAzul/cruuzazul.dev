@@ -1,8 +1,9 @@
 import v0 from '../../public/images/talks/v0.png';
 import DevfestStrasbourg2024 from '../../public/images/conferenceLogos/devfest-strasbourg-2024.png';
 import Zenika from '../../public/images/conferenceLogos/zenika.svg';
+import {Talk} from './speaking';
 
-export const EntretienTechDuneIaV0ReleveLeDefiEnDirect = {
+export const EntretienTechDuneIaV0ReleveLeDefiEnDirect: Talk = {
   id: '6',
   title: "Entretien tech d’une IA\u00A0: v0 relève le défi en direct 🤖",
   description:
@@ -14,7 +15,7 @@ export const EntretienTechDuneIaV0ReleveLeDefiEnDirect = {
     '\n' +
     'Saura-t-il créer des interfaces parfaites en un temps record ? Cet entretien tech collaboratif pourrait bien être le moment décisif de l’année pour dénicher votre futur binôme ! 👥 Préparez vos questions et venez mettre v0 à l’épreuve !',
   image: v0,
-  format: 'Quicky (20 minutes)',
+  format: 'Talk',
   videoId: 'VmCwqJ4F3wo',
   speaker: [
     {

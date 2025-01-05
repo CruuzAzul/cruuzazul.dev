@@ -24,12 +24,14 @@ export interface Conference {
   image: StaticImageData;
 }
 
+type Format = 'Talk' | 'Workshop' | 'Quicky' | 'Podcast';
+
 export interface Talk {
   id: string;
   title: string;
   description: string;
   image: StaticImageData;
-  format: string;
+  format: Format;
   videoId?: string;
   speaker: Speaker[];
   conferences: Conference[];

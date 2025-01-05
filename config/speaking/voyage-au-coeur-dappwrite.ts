@@ -4,8 +4,9 @@ import DevfestLille from '../../public/images/conferenceLogos/devfest-lille.png'
 import DevfestStrasbourg2023 from '../../public/images/conferenceLogos/devfest-strasbourg-2023.png';
 import SnowCamp from '../../public/images/conferenceLogos/snowcamp.webp';
 import Breizhcamp from '../../public/images/conferenceLogos/breizhcamp.svg';
+import {Workshop} from './speaking';
 
-export const VoyageAuCoeurDappwrite = {
+export const VoyageAuCoeurDappwrite: Workshop = {
   id: '5',
   title: "Voyage au coeur d'Appwrite\u00A0: le backend open-source qui challenge Firebase 🧳",
   description:
@@ -15,7 +16,7 @@ export const VoyageAuCoeurDappwrite = {
     '\n' +
     'Prenez votre courage à deux mains et embarquez avec nous pour une expérience inoubliable au cœur de l\'écosystème Appwrite ! 👨🏼‍✈️',
   image: AppwriteWorkshop,
-  format: 'Atelier',
+  format: 'Workshop',
   speaker: [
     {
       name: 'Lucas Audart',

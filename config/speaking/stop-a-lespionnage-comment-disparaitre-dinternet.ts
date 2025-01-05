@@ -5,8 +5,9 @@ import SnowCamp from '../../public/images/conferenceLogos/snowcamp.webp';
 import TouraineTech from '../../public/images/conferenceLogos/touraineTech.svg';
 import Breizhcamp from '../../public/images/conferenceLogos/breizhcamp.svg';
 import Zenika from '../../public/images/conferenceLogos/zenika.svg';
+import {Talk} from './speaking';
 
-export const StopALespionnageCommentDisparaitreDinternet = {
+export const StopALespionnageCommentDisparaitreDinternet: Talk = {
   id: '4',
   title: 'STOP à l’espionnage ! Comment disparaître d’internet ? 🕵🏼‍',
   description:
@@ -16,7 +17,7 @@ export const StopALespionnageCommentDisparaitreDinternet = {
     '\n' +
     'Et si vous êtes chanceux, nous vous dévoilerons peut-être quelques secrets de ninja pour échapper aux espions ! Venez nous rejoindre et apprenez comment devenir le maître du camouflage numérique ! 😶‍🌫️',
   image: Espionnage,
-  format: 'Talk (50 minutes)',
+  format: 'Talk',
   videoId: 'pHP3MC1r6Ro',
   speaker: [
     {

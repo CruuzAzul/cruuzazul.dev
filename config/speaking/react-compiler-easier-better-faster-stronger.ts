@@ -1,8 +1,9 @@
 import ReactCompiler from '../../public/images/talks/react-compiler.png';
 import TouraineTech from '../../public/images/conferenceLogos/touraineTech.svg';
 import DevfestNantes2024 from '../../public/images/conferenceLogos/devfest-nantes-2024.svg';
+import {Talk} from './speaking';
 
-export const ReactCompilerEasierBetterFasterStronger = {
+export const ReactCompilerEasierBetterFasterStronger: Talk = {
   id: '1',
   title: 'React Compiler\u00A0: Easier, Better, Faster, Stronger 🤖',
   description:
@@ -12,7 +13,7 @@ export const ReactCompilerEasierBetterFasterStronger = {
     '\n' +
     "Le React Compiler, véritable chef-d'œuvre de cette mise à jour, s'annonce comme un remix parfait pour vos applications passées et futures ! Venez vibrer avec nous et laissez-vous emporter par le rythme du React Compiler ! 🚀\n",
   image: ReactCompiler,
-  format: 'Talk (50 minutes)',
+  format: 'Talk',
   videoId: '_edOnkr8Yy4',
   speaker: [
     {

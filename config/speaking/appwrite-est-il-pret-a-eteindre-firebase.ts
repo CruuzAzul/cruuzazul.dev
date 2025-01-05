@@ -7,8 +7,9 @@ import Mixit from '../../public/images/conferenceLogos/mixit.svg';
 import Breizhcamp from '../../public/images/conferenceLogos/breizhcamp.svg';
 import DevFestDijon from '../../public/images/conferenceLogos/devfestDijon.png';
 import Zenika from '../../public/images/conferenceLogos/zenika.svg';
+import {Talk} from './speaking';
 
-export const AppwriteEstIlPretAEteindreFirebase = {
+export const AppwriteEstIlPretAEteindreFirebase: Talk = {
   id: '2',
   title: 'Appwrite est-il prêt à éteindre Firebase ? 🔥',
   description:
@@ -18,7 +19,7 @@ export const AppwriteEstIlPretAEteindreFirebase = {
     '\n' +
     'Peu importe votre réponse, venez découvrir avec nous le duel entre Appwrite la jeune solution open-source et Firebase la flamme de Google 🥊',
   image: Appwrite,
-  format: 'Talk (50 minutes)',
+  format: 'Talk',
   videoId: '_QYXiq2fmS0',
   speaker: [
     {
