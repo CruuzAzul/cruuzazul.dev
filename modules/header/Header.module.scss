@@ -13,14 +13,6 @@
   padding: 20px 5rem 20px;
   transition: box-shadow 0.5s ease-in-out;
 
-  @media (max-width: 900px) {
-    padding-left: 2rem;
-  }
-
-  @media (max-width: 480px) {
-    padding-left: 1rem;
-  }
-
   &.scrolled {
     box-shadow: rgba(0, 0, 0, 0.45) 0 0 40px -20px;
   }
@@ -36,6 +28,19 @@
 
   .helloHand {
     font-size: 2rem;
+  }
+
+  @media (max-width: 900px) {
+    padding-left: 2rem;
+  }
+
+  @media (max-width: 480px) {
+    padding: 15px 1rem;
+
+    .picture {
+      width: 40px;
+      height: 40px;
+    }
   }
 }
 

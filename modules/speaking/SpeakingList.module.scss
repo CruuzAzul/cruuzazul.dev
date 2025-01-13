@@ -34,7 +34,7 @@
         gap: 3rem;
 
         h2 {
-          font-size: clamp(2rem, 6vw, 2.5rem);
+          font-size: clamp(1.5rem, 6vw, 2.5rem);
           font-weight: 800;
           text-align: center;
           text-wrap: balance;
@@ -67,7 +67,7 @@
           width: 100%;
           height: auto;
           border-radius: 8px;
-          box-shadow: 0 0px 20px 0 rgba(14, 42, 90, 0.35);
+          box-shadow: 0 0 20px 0 rgba(14, 42, 90, 0.35);
           aspect-ratio: auto;
           transition: all 0.5s;
         }

@@ -59,4 +59,8 @@
       transform: rotate(-45deg) scaleX(1.35);
     }
   }
+
+  @media (max-width: 480px) {
+    padding: 1.2rem;
+  }
 }
