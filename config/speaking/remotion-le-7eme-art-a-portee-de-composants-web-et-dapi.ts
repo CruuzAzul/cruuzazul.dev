@@ -18,8 +18,9 @@ export const RemotionLe7emeArtAPorteeDeComposantsWebEtDApi: Talk = {
   videoId: 'mr_-LTkLl8A',
   speaker: [
     {
-      name: 'Lucas Audart',
-      twitter: 'https://twitter.com/Slocalyy',
+      name: 'Antoine Caron',
+      picture: 'https://github.com/slashgear.png',
+      twitter: 'https://x.com/Slashgear_',
     },
   ],
   conferences: [

@@ -21,6 +21,7 @@ export const JadoreLesDeveloppeursDans23AnsIlYEnAuraPlus: Talk = {
   speaker: [
     {
       name: 'Audart Lucas',
+      picture: 'https://github.com/Slocaly.png',
       twitter: 'https://twitter.com/Slocalyy',
     },
   ],

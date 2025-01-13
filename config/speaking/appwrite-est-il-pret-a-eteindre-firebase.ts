@@ -24,6 +24,7 @@ export const AppwriteEstIlPretAEteindreFirebase: Talk = {
   speaker: [
     {
       name: 'Lucas Audart',
+      picture: 'https://github.com/Slocaly.png',
       twitter: 'https://twitter.com/Slocalyy',
     },
   ],

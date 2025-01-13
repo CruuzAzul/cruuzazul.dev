@@ -22,6 +22,7 @@ export const StopALespionnageCommentDisparaitreDinternet: Talk = {
   speaker: [
     {
       name: 'Etienne Idoux',
+      picture: 'https://github.com/PopsIDX.png',
       twitter: 'https://twitter.com/PopsIDX',
     },
   ],

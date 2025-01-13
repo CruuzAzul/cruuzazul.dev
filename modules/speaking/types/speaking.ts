@@ -16,6 +16,7 @@ import {FaBolt, FaCode, FaPodcast} from 'react-icons/fa';
 
 export interface Speaker {
   name: string;
+  picture: string;
   twitter: string;
 }
 

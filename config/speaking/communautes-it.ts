@@ -12,8 +12,24 @@ export const CommunautesIt: Podcast = {
   format: 'Podcast',
   speaker: [
     {
+      name: 'Adriana Nava Aguilar',
+      picture: 'https://github.com/quilaztlia.png',
+      twitter: 'https://x.com/quilaztlia',
+    },
+    {
       name: 'Audart Lucas',
+      picture: 'https://github.com/Slocaly.png',
       twitter: 'https://twitter.com/Slocalyy',
+    },
+    {
+      name: 'Jean-Phi Baconnais',
+      picture: 'https://github.com/jeanphi-baconnais.png',
+      twitter: 'https://x.com/JPhi_Baconnais',
+    },
+    {
+      name: 'Julien Landuré',
+      picture: 'https://github.com/jlandure.png',
+      twitter: 'https://x.com/jlandure',
     },
   ],
   videoId: 'wtLd2ABm0Xs',

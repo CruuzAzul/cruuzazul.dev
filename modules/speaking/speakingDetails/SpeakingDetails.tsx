@@ -23,7 +23,7 @@ export const SpeakingDetails = ({talkData}: TalkProps) => {
         <h2>{talkData.title}</h2>
         <div className={styles.details}>
           <div className={styles.formatAndSpeakers}>
-            <Image src={talkData.image} alt={talkData.title} width={352	} height={198} className={styles.talkImage} />
+            <Image src={talkData.image} alt={talkData.title} width={352} height={198} className={styles.talkImage} />
             <span className={styles.label}>
               Format :
               <span className={styles.format}>
@@ -36,12 +36,7 @@ export const SpeakingDetails = ({talkData}: TalkProps) => {
               <div className={styles.speakers}>
                 {talkData.speaker.map((speaker) => (
                   <a key={speaker.name} href={speaker.twitter} className={styles.avatar}>
-                    <img
-                      width={30}
-                      height={30}
-                      src="https://img.freepik.com/psd-gratuit/rendu-3d-du-personnage-avatar_23-2150611765.jpg"
-                      alt="Speaker avatar"
-                    />
+                    <Image src={speaker.picture} alt={speaker.name} width={30} height={30} />
                   </a>
                 ))}
               </div>

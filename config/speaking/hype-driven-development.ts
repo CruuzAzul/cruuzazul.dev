@@ -14,7 +14,18 @@ export const HypeDrivenDevelopment: Podcast = {
   speaker: [
     {
       name: 'Audart Lucas',
+      picture: 'https://github.com/Slocaly.png',
       twitter: 'https://twitter.com/Slocalyy',
+    },
+    {
+      name: 'Hubert Sablonnière',
+      picture: 'https://github.com/hsablonniere.png',
+      twitter: 'https://x.com/hsablonniere',
+    },
+    {
+      name: 'Etienne Idoux',
+      picture: 'https://github.com/PopsIDX.png',
+      twitter: 'https://twitter.com/PopsIDX',
     },
   ],
   videoId: '3tBFOo8Yjoo',
