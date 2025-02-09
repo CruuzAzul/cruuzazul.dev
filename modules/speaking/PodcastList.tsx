@@ -12,7 +12,7 @@ export default function PodcastList() {
       <div className={styles.speakings}>
         {podcasts.map((podcast) => (
           <div className={styles.speakingElem} key={podcast.title}>
-            <h2>{podcast.title}</h2>
+            <h2>{podcast.title} {podcast.language}</h2>
             <p>{podcast.description}</p>
             <div className={styles.video}>
               <iframe

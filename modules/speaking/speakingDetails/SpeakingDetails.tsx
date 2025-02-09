@@ -20,7 +20,7 @@ export const SpeakingDetails = ({talkData}: TalkProps) => {
           <FaAnglesLeft />
           Go back to the list
         </Link>
-        <h2>{talkData.title}</h2>
+        <h2>{talkData.title} {talkData.language}</h2>
         <div className={styles.details}>
           <div className={styles.formatAndSpeakers}>
             <Image src={talkData.image} alt={talkData.title} width={352} height={198} className={styles.talkImage} />

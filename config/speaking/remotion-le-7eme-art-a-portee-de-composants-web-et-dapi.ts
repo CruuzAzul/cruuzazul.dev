@@ -8,7 +8,8 @@ import {Talk} from '../../modules/speaking/types/speaking';
 
 export const RemotionLe7emeArtAPorteeDeComposantsWebEtDApi: Talk = {
   id: '3',
-  title: "Remotion\u00A0: le 7ème art à portée de composants web et d'API 🎬\u00A0(🇫🇷)",
+  title: "Remotion\u00A0: le 7ème art à portée de composants web et d'API 🎬",
+  language: '(🇫🇷)',
   description:
     "Remotion est une lib open source publiée en 2019, qui permet la génération de gif, d'animations, de vidéos de manière programmatique, à partir de composant React ! Nous allons vous partager notre aventure de création de trailer vidéo dans le contexte des plateformes de streaming sur lesquels nous travaillons chez Bedrock. Nostalgique des programmes du début des années 2000, on a essayé de reproduire quelques bandes d'annonces pour vous rappelez des souvenirs et vous montrer à quel point c'est facile !\n" +
     '\n' +

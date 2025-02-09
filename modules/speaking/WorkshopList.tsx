@@ -13,7 +13,7 @@ export default function WorkshopList() {
       <div className={styles.speakings}>
         {workshops.map((workshop) => (
           <div className={styles.speakingElem} key={workshop.title}>
-            <h2>{workshop.title}</h2>
+            <h2>{workshop.title} {workshop.language}</h2>
             <p>{workshop.description}</p>
             <Image src={workshop.image} alt={workshop.title} width={320} height={180} />
             <Link href={`/speaking/${slugElementTitle(workshop)}`} key={workshop.id} className={styles.pageLink}>

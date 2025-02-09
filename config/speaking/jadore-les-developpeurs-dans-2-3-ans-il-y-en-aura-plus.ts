@@ -4,7 +4,8 @@ import {Talk} from '../../modules/speaking/types/speaking';
 
 export const JadoreLesDeveloppeursDans23AnsIlYEnAuraPlus: Talk = {
   id: '7',
-  title: "J'adore les développeurs, dans 2, 3 ans il y en aura plus 👨🏻‍💻\u00A0(🇫🇷)",
+  title: "J'adore les développeurs, dans 2, 3 ans il y en aura plus 👨🏻‍💻",
+  language: '(🇫🇷)',
   description:
     'Entre nous, avons-nous encore besoin de développeurs ? 🤔\n' +
     '\n' +

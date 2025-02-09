@@ -67,7 +67,16 @@ export default async function Image({params}: {params: {talkName: string}}) {
             justifyContent: 'center',
           }}
         >
-          <img src="https://github.com/cruuzazul.png" height={50} width={50} alt="Mickaël Alves" />
+          <img
+            style={{
+              borderRadius: 20,
+              border: '3px solid #4eb9a5',
+            }}
+            src="https://github.com/cruuzazul.png"
+            height={100}
+            width={100}
+            alt="Mickaël Alves"
+          />
         </div>
         <div
           style={{
@@ -81,7 +90,7 @@ export default async function Image({params}: {params: {talkName: string}}) {
             fontWeight: 'bold',
           }}
         >
-          <b>{talkTitle}</b>
+          {talkTitle}
         </div>
       </div>
     ),

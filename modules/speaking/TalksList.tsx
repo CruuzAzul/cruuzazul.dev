@@ -12,7 +12,7 @@ export default function TalksList() {
       <div className={styles.speakings}>
         {talks.map((talk) => (
           <div className={styles.speakingElem} key={talk.title}>
-            <h2>{talk.title}</h2>
+            <h2>{talk.title} {talk.language}</h2>
             <p>{talk.description}</p>
             <div className={styles.video}>
               <iframe

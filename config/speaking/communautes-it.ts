@@ -4,7 +4,8 @@ import Zenika from '../../public/images/conferenceLogos/zenika.svg';
 
 export const CommunautesIt: Podcast = {
   id: '10',
-  title: 'Les communautés IT\u00A0(🇫🇷)',
+  title: 'Les communautés IT',
+  language: '(🇫🇷)',
   description: 'Dans le monde de la tech, les communautés jouent un rôle central en permettant de faire vivre des projets, de fédérer des talents et de créer de l’émulation autour d’initiatives inspirantes. Que ce soit en entreprise, dans l’open source ou à travers des programmes comme GDG, Devfest, Women Techmakers, ou encore le programme Heroes, ces communautés sont un moteur d’innovation et de collaboration.\n' +
     '\n' +
     'Dans ce podcast, nous plongeons au cœur de ces communautés, en explorant les raisons pour lesquelles des passionnés de tech choisissent de s’y investir. À travers des échanges riches et variés, nos invités partagent leurs expériences : comment ces communautés naissent, comment elles grandissent, et surtout, quels sont les bénéfices qu’elles apportent, que ce soit sur le plan personnel, professionnel ou collectif.\n',

@@ -4,7 +4,8 @@ import {Talk} from '../../modules/speaking/types/speaking';
 
 export const FlutterLeFuturDuWeb: Talk = {
   id: '8',
-  title: 'Flutter, le futur du web ? 🐦\u00A0(🇫🇷)',
+  title: 'Flutter, le futur du web ? 🐦',
+  language: '(🇫🇷)',
   description:
     'Vous avez sûrement déjà entendu parler de Flutter une des dernière technologie de Google ! 🐦 \n' +
     '\n' +

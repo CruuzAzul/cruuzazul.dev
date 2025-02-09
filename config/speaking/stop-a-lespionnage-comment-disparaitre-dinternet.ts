@@ -9,7 +9,8 @@ import {Talk} from '../../modules/speaking/types/speaking';
 
 export const StopALespionnageCommentDisparaitreDinternet: Talk = {
   id: '4',
-  title: 'STOP à l’espionnage ! Comment disparaître d’internet ? 🕵🏼‍\u00A0(🇫🇷)',
+  title: 'STOP à l’espionnage ! Comment disparaître d’internet ? 🕵🏼‍',
+  language: '(🇫🇷)',
   description:
     'Vous en avez marre de vous sentir traqué sur Internet ? 😒 Nous aussi ! Mais est-il réellement possible de nos jours de devenir un véritable ninja digital ? 🥷🏻 Et si pour protéger votre vie privée en ligne, il fallait tout d’abord comprendre qui a accès à vos données et ce qu’ils peuvent faire avec ?\n' +
     '\n' +

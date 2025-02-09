@@ -13,6 +13,7 @@ export async function generateMetadata(
   { params }: Props,
 ): Promise<{
   title: string;
+  description?: string;
 }> {
   const talkName = (await params).talkName
 
@@ -22,6 +23,7 @@ export async function generateMetadata(
 
   return {
     title: talkTitle,
+    description: talk?.description,
   }
 }
 

@@ -40,6 +40,7 @@ export type Talk = {
   id: string;
   title: string;
   description: string;
+  language?: string;
   image: StaticImageData;
   format: Format;
   videoId?: string;

@@ -11,7 +11,8 @@ import {Talk} from '../../modules/speaking/types/speaking';
 
 export const AppwriteEstIlPretAEteindreFirebase: Talk = {
   id: '2',
-  title: 'Appwrite est-il prêt à éteindre Firebase ? 🔥\u00A0(🇫🇷)',
+  title: 'Appwrite est-il prêt à éteindre Firebase ? 🔥',
+  language: '(🇫🇷)',
   description:
     "Est-ce que Firebase vous dit quelque chose ? Vous en avez sûrement entendu parler et vous l'avez peut-être déjà utilisé, et pour le coup, c'est normal ! Voilà maintenant plusieurs années que de nombreux développeurs l'utilisent pour faciliter la création de back-end scalable et performant.\n" +
     '\n' +
