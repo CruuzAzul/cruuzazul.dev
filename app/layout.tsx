@@ -12,7 +12,7 @@ interface RootLayoutProps {
 
 export const metadata: Metadata = {
   description:
-    "👋🏼 Welcome to Mickaël Alves site! Web maker, app builder, and passionate speaker on web dev, design, and new tech. Web consultant at @Zenika 🔴, DX Engineer at @BedrockStreaming 📺. Speaker, educator, co-organizer of @LyonJS 🦁, @Appwrite Hero 🦸🏼‍♂️ & @Remotion Expert 🎬.",
+    '👋🏼 Welcome to Mickaël Alves site! Web maker, app builder, and passionate speaker on web dev, design, and new tech. Web consultant at @Zenika 🔴, DX Engineer at @BedrockStreaming 📺. Speaker, educator, co-organizer of @LyonJS 🦁, @Appwrite Hero 🦸🏼‍♂️ & @Remotion Expert 🎬.',
   icons: {
     icon: 'images/mickael-alves.png',
     apple: 'images/mickael-alves.png',
