@@ -15,22 +15,22 @@ export const CommunautesIt: Podcast = {
     {
       name: 'Adriana Nava Aguilar',
       picture: 'https://github.com/quilaztlia.png',
-      twitter: 'https://x.com/quilaztlia',
+      social: 'https://x.com/quilaztlia',
     },
     {
       name: 'Audart Lucas',
       picture: 'https://github.com/Slocaly.png',
-      twitter: 'https://twitter.com/Slocalyy',
+      social: 'https://bsky.app/profile/slocaly.bsky.social',
     },
     {
       name: 'Jean-Phi Baconnais',
       picture: 'https://github.com/jeanphi-baconnais.png',
-      twitter: 'https://x.com/JPhi_Baconnais',
+      social: 'https://x.com/JPhi_Baconnais',
     },
     {
       name: 'Julien Landuré',
       picture: 'https://github.com/jlandure.png',
-      twitter: 'https://x.com/jlandure',
+      social: 'https://x.com/jlandure',
     },
   ],
   videoId: 'wtLd2ABm0Xs',

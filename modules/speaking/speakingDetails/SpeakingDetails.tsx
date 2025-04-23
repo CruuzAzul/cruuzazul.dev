@@ -5,6 +5,7 @@ import React from 'react';
 import {formatData, Talk} from '../types/speaking';
 import Link from 'next/link';
 import {FaAnglesLeft} from 'react-icons/fa6';
+import {RiSlideshow4Line} from 'react-icons/ri';
 
 interface TalkProps {
   talkData: Talk;
@@ -13,6 +14,7 @@ interface TalkProps {
 export const SpeakingDetails = ({talkData}: TalkProps) => {
   const FormatIcon = formatData[talkData.format];
 
+  console.log(talkData);
   return (
     <section className={styles.speakingRoot}>
       <div className={styles.speaking}>
@@ -20,7 +22,9 @@ export const SpeakingDetails = ({talkData}: TalkProps) => {
           <FaAnglesLeft />
           Go back to the list
         </Link>
-        <h2>{talkData.title} {talkData.language}</h2>
+        <h2>
+          {talkData.title} {talkData.language}
+        </h2>
         <div className={styles.details}>
           <div className={styles.formatAndSpeakers}>
             <Image src={talkData.image} alt={talkData.title} width={352} height={198} className={styles.talkImage} />
@@ -35,12 +39,26 @@ export const SpeakingDetails = ({talkData}: TalkProps) => {
               Co-speakers :
               <div className={styles.speakers}>
                 {talkData.speaker.map((speaker) => (
-                  <a key={speaker.name} href={speaker.twitter} className={styles.avatar}>
+                  <a
+                    key={speaker.name}
+                    href={speaker.social}
+                    className={styles.avatar}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <Image src={speaker.picture} alt={speaker.name} width={30} height={30} />
                   </a>
                 ))}
               </div>
             </span>
+            {talkData.slidesUrl && (
+              <span className={styles.label}>
+                <RiSlideshow4Line />
+                <a href={talkData.slidesUrl} target="_blank" rel="noopener noreferrer" className={styles.link}>
+                  Slide presentation
+                </a>
+              </span>
+            )}
           </div>
           <p className={styles.description}>{talkData.description}</p>
         </div>

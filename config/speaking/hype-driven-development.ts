@@ -16,17 +16,17 @@ export const HypeDrivenDevelopment: Podcast = {
     {
       name: 'Audart Lucas',
       picture: 'https://github.com/Slocaly.png',
-      twitter: 'https://twitter.com/Slocalyy',
+      social: 'https://bsky.app/profile/slocaly.bsky.social',
     },
     {
       name: 'Hubert Sablonnière',
       picture: 'https://github.com/hsablonniere.png',
-      twitter: 'https://x.com/hsablonniere',
+      social: 'https://x.com/hsablonniere',
     },
     {
       name: 'Etienne Idoux',
       picture: 'https://github.com/PopsIDX.png',
-      twitter: 'https://twitter.com/PopsIDX',
+      social: 'https://twitter.com/PopsIDX',
     },
   ],
   videoId: '3tBFOo8Yjoo',

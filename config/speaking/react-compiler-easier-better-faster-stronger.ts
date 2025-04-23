@@ -1,5 +1,6 @@
 import ReactCompiler from '../../public/images/talks/react-compiler.png';
 import TouraineTech from '../../public/images/conferenceLogos/touraineTech.svg';
+import Devoxx from '../../public/images/conferenceLogos/devoxx.png';
 import DevfestNantes2024 from '../../public/images/conferenceLogos/devfest-nantes-2024.svg';
 import {Talk} from '../../modules/speaking/types/speaking';
 
@@ -16,14 +17,21 @@ export const ReactCompilerEasierBetterFasterStronger: Talk = {
   image: ReactCompiler,
   format: 'Talk',
   videoId: '_edOnkr8Yy4',
+  slidesUrl: 'https://slides-talk-react-compiler.vercel.app/',
   speaker: [
     {
       name: 'Lucas Audart',
       picture: 'https://github.com/Slocaly.png',
-      twitter: 'https://twitter.com/Slocalyy',
+      social: 'https://bsky.app/profile/slocaly.bsky.social',
     },
   ],
   conferences: [
+    {
+      name: 'Devoxx France',
+      link: 'https://www.devoxx.fr/agenda-2025/talk/react-compiler-easier-better-faster-stronger/',
+      date: '2025',
+      image: Devoxx,
+    },
     {
       name: 'Touraine Tech',
       link: '',

@@ -26,7 +26,7 @@ export const AppwriteEstIlPretAEteindreFirebase: Talk = {
     {
       name: 'Lucas Audart',
       picture: 'https://github.com/Slocaly.png',
-      twitter: 'https://twitter.com/Slocalyy',
+      social: 'https://bsky.app/profile/slocaly.bsky.social',
     },
   ],
   conferences: [

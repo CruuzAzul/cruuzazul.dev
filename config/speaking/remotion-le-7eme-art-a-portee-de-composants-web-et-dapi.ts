@@ -21,7 +21,7 @@ export const RemotionLe7emeArtAPorteeDeComposantsWebEtDApi: Talk = {
     {
       name: 'Antoine Caron',
       picture: 'https://github.com/slashgear.png',
-      twitter: 'https://x.com/Slashgear_',
+      social: 'https://x.com/Slashgear_',
     },
   ],
   conferences: [

@@ -22,7 +22,7 @@ export const EntretienTechDuneIaV0ReleveLeDefiEnDirect: Talk = {
     {
       name: 'Etienne Idoux',
       picture: 'https://github.com/PopsIDX.png',
-      twitter: 'https://twitter.com/PopsIDX',
+      social: 'https://twitter.com/PopsIDX',
     },
   ],
   conferences: [

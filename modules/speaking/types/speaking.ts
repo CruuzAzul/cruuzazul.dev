@@ -17,7 +17,7 @@ import {FaBolt, FaCode, FaPodcast} from 'react-icons/fa';
 export interface Speaker {
   name: string;
   picture: string;
-  twitter: string;
+  social: string;
 }
 
 export interface Conference {
@@ -46,6 +46,7 @@ export type Talk = {
   videoId?: string;
   speaker: Speaker[];
   conferences: Conference[];
+  slidesUrl?: string;
 }
 
 export const talks: Talk[] = [
