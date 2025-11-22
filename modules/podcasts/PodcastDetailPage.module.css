@@ -1,0 +1,120 @@
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  margin-bottom: 40px;
+}
+
+/* Podcast image */
+.podcastImage {
+  width: 100%;
+  margin-bottom: 24px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.podcastImage :global(img) {
+  filter: grayscale(0.3);
+}
+
+/* Content */
+.content {
+}
+
+/* Section */
+.section {
+  margin-bottom: 48px;
+}
+
+/* Section title */
+.sectionTitle {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--color-primary);
+}
+
+/* Description */
+.description {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--color-secondary);
+  white-space: pre-line;
+}
+
+/* Platforms container */
+.platformsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+/* Platform button */
+.platformButton {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  background-color: var(--color-command);
+  color: var(--color-primary);
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid var(--color-hover);
+  transition: all 0.3s ease;
+}
+
+.platformButton:hover {
+  background-color: var(--color-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.platformButton:hover :global(span img) {
+  transform: scale(1.1) rotate(5deg);
+  filter: brightness(0) saturate(100%) invert(100%) drop-shadow(0 0 8px rgba(255, 255, 255, 0.3));
+}
+
+/* Platform icon */
+.platformIcon {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.platformIcon :global(img) {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Platform name */
+.platformName {
+  flex: 1;
+}
+
+/* Back link */
+.backLink {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 12px 24px;
+  background-color: var(--color-command);
+  color: var(--color-primary);
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid var(--color-hover);
+  transition: all 0.2s ease;
+}
+
+.backLink:hover {
+  background-color: var(--color-hover);
+}
+

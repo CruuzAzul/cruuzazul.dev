@@ -1,0 +1,72 @@
+/**
+ * Utility classes using CSS variables
+ * These can be used directly in components
+ */
+
+/* Color utilities */
+.text-primary {
+    color: var(--color-primary);
+}
+
+.text-secondary {
+    color: var(--color-secondary);
+}
+
+.bg-background {
+    background-color: var(--color-background);
+}
+
+.bg-hover {
+    background-color: var(--color-hover);
+}
+
+.bg-command {
+    background-color: var(--color-command);
+}
+
+/* Font utilities */
+.font-body {
+    font-family: var(--font-body);
+}
+
+.font-code {
+    font-family: var(--font-code);
+}
+
+.font-heading {
+    font-family: var(--font-heading);
+}
+
+/* Spacing utilities */
+.nav-height-desktop {
+    height: var(--space-nav-height-desktop);
+}
+
+.nav-height-mobile {
+    height: var(--space-nav-height-mobile);
+}
+
+/* Border radius */
+.border-radius {
+    border-radius: var(--radius-border-radius);
+}
+
+/* Transitions */
+.transition {
+    transition-duration: var(--transition-duration);
+}
+
+/* Responsive utilities */
+@media (min-width: 760px) {
+    .bp2-block {
+        display: block;
+    }
+
+    .bp2-flex {
+        display: flex;
+    }
+
+    .bp2-none {
+        display: none;
+    }
+}

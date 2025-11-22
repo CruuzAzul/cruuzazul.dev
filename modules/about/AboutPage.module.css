@@ -1,0 +1,61 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (min-width: 760px) {
+    .container {
+        flex-direction: row;
+    }
+}
+
+.paragraph {
+    margin: 0;
+}
+
+@media (min-width: 760px) {
+    .paragraph {
+        margin: 15px 0;
+    }
+}
+
+.paragraphWithTopMargin {
+    margin-top: 16px;
+}
+
+@media (min-width: 760px) {
+    .paragraphWithTopMargin {
+        margin-top: -6px;
+    }
+}
+
+.buttonsContainer {
+    display: flex;
+    align-items: center;
+}
+
+.section {
+    margin-top: 0px;
+    width: auto;
+}
+
+@media (min-width: 760px) {
+    .section {
+        width: 48%;
+    }
+}
+
+.listItem {
+    margin-bottom: 40px;
+    padding-left: 20px;
+}
+
+.listParagraph {
+    margin: 0;
+}
+
+.listParagraphItalic {
+    margin: 0;
+    font-style: italic;
+}

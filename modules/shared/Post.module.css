@@ -1,0 +1,116 @@
+.postMain {
+    padding: var(--space-nav-height-mobile) 0;
+    overflow: hidden;
+    flex: 1 1;
+}
+
+.post {
+    overflow: hidden;
+    flex: 1 1;
+}
+
+.postContainer {
+    margin: 0 auto;
+    max-width: 760px;
+    padding: 0 20px;
+}
+
+.postContent {
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--color-secondary);
+    background: var(--color-background);
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    min-height: 100%;
+    flex: 1 1;
+    padding: 20px 0;
+}
+
+.postContent ::selection {
+    background: var(--selection-bg, #ff80bf);
+    color: #000;
+    -webkit-text-fill-color: #000;
+}
+
+.postContent :global(.iframe-wrap) {
+    height: 0;
+    margin-bottom: 20px;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    position: relative;
+}
+
+.postContent :global(.iframe-wrap iframe) {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.postContent :global(.post-image-caption) {
+    color: var(--color-secondary);
+    text-align: center;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.postContent :global(.post-image-full) {
+    margin: 20px 0 0;
+    max-width: initial;
+    width: 70vw;
+}
+
+@media (min-width: 760px) {
+    .postContent :global(.post-image-full) {
+        margin-left: calc(-1 * (70vw - 760px) / 2);
+    }
+}
+
+@media (max-width: 1024px) {
+    .postContent :global(.post-image-full) {
+        margin-left: 0;
+    }
+}
+
+.postContent :global(.side-by-side) {
+    display: flex;
+    width: 90vw;
+    margin: 40px 0;
+    flex-direction: row;
+}
+
+@media (min-width: 760px) {
+    .postContent :global(.side-by-side) {
+        margin-left: calc(-1 * (90vw - 760px) / 2);
+    }
+}
+
+@media (max-width: 1024px) {
+    .postContent :global(.side-by-side) {
+        margin-left: 0;
+        flex-direction: column;
+    }
+}
+
+.postContent :global(.side-by-side-img) {
+    min-width: 50%;
+}
+
+@media (min-width: 760px) {
+    .postContent :global(.side-by-side-img) {
+        min-width: 100%;
+    }
+}
+
+.postContent :global(.side-by-side-caption) {
+    color: var(--color-secondary);
+    text-align: center;
+    font-style: italic;
+    font-size: 14px;
+    margin-top: -30px;
+}

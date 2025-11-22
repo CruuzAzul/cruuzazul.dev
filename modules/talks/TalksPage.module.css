@@ -1,0 +1,218 @@
+/* Header with toggle */
+.headerWithToggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.headerWithToggle :global(h2) {
+  margin: 0;
+}
+
+/* Toggle container */
+.toggleContainer {
+  display: flex;
+  gap: 8px;
+  border: 1px solid var(--color-hover);
+  border-radius: 8px;
+  padding: 4px;
+  background-color: var(--color-command);
+}
+
+/* Toggle button */
+.toggleButton {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--color-secondary);
+  position: relative;
+}
+
+.toggleButton:hover {
+  color: var(--color-primary);
+}
+
+.toggleButtonActive {
+  color: var(--color-primary);
+}
+
+/* Toggle background (for Framer Motion) */
+.toggleBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--color-hover);
+  border-radius: 6px;
+  z-index: -1;
+}
+
+/* Toggle text */
+.toggleText {
+  position: relative;
+  z-index: 1;
+  line-height: 2;
+}
+
+/* Talk container */
+.talkContainer {
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--color-hover);
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+/* Talk content */
+.talkContent {
+  flex: 1;
+  margin-right: 20px;
+}
+
+/* Talk meta */
+.talkMeta {
+  color: var(--color-secondary);
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+/* Talk description */
+.talkDescription {
+  color: var(--color-secondary);
+  line-height: 1.6;
+  white-space: pre-line;
+}
+
+/* Talk button */
+.talkButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background-color: var(--color-hover);
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+}
+
+.talkButton:hover {
+  background-color: var(--color-primary);
+  color: var(--color-background);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.talkButton:hover :global(i) {
+  transform: translate(3px, -3px) rotate(45deg) translateY(3px);
+  transform-origin: center center;
+}
+
+.talkButton :global(i) {
+  font-size: 16px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-origin: center center;
+}
+
+/* Featured talks container */
+.featuredTalksContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  align-items: stretch;
+  padding-bottom: 2rem;
+}
+
+@media (max-width: 640px) {
+  .featuredTalksContainer {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Year section */
+.yearSection {
+  margin-bottom: 40px;
+}
+
+/* Year title */
+.yearTitle {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--color-primary);
+}
+
+/* Conference group */
+.conferenceGroup {
+  margin-bottom: 24px;
+  padding-left: 20px;
+}
+
+/* Conference name */
+.conferenceName {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--color-primary);
+}
+
+/* Talks list */
+.talksList {
+  list-style: none;
+  padding-left: 0;
+  margin: 8px 0;
+}
+
+.talksList :global(li) {
+  position: relative;
+  padding-left: 20px;
+}
+
+.talksList :global(li)::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+  font-weight: bold;
+  transition: transform 0.2s ease;
+}
+
+.talksList :global(li:hover)::before {
+  transform: translateX(-3px);
+}
+
+.talksList :global(a) {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.talksList :global(a:hover) {
+  text-decoration: underline;
+}
+
+/* Talks list item */
+.talksListItem {
+  padding: 4px 0;
+  color: var(--color-secondary);
+  line-height: 1.6;
+}

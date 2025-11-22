@@ -1,0 +1,25 @@
+/**
+ * Breakpoint utilities
+ * Use these classes or media queries in your CSS Modules
+ */
+
+/* Breakpoint 1: min-width 425px */
+@media (min-width: 425px) {
+  /* Add your styles here */
+}
+
+/* Breakpoint 2: min-width 760px */
+@media (min-width: 760px) {
+  /* Add your styles here */
+}
+
+/* Breakpoint 3: max-width 780px */
+@media (max-width: 780px) {
+  /* Add your styles here */
+}
+
+/* Breakpoint 4: max-width 1024px */
+@media (max-width: 1024px) {
+  /* Add your styles here */
+}
+

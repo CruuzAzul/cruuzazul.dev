@@ -1,0 +1,12 @@
+.featuredProjects {
+    margin: 10px 0 0 -20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+@media (min-width: 760px) {
+    .featuredProjects {
+        flex-direction: row;
+    }
+}

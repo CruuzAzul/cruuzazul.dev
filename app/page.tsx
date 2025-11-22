@@ -1,15 +1,11 @@
-import {Home} from '../modules/home/Home';
-import {Hero} from '../modules/home/Hero';
-import {Metadata} from 'next';
+import { Metadata } from 'next'
+import HomePage from '../modules/home/HomePage'
 
 export const metadata: Metadata = {
   title: 'Mickaël Alves',
-};
-
-export default function HomePage() {
-  return (
-    <Home>
-      <Hero />
-    </Home>
-  );
 }
+
+export default function Index() {
+  return <HomePage />
+}
+

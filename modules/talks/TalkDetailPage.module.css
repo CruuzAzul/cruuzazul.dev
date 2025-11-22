@@ -1,0 +1,162 @@
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.header {
+    margin-bottom: 40px;
+}
+
+.talkImage {
+    width: 100%;
+    margin-bottom: 24px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.talkImage img {
+    filter: grayscale(0.3);
+    border-radius: 0 0 12px 12px;
+    display: block;
+}
+
+.content {}
+
+.section {
+    margin-bottom: 48px;
+}
+
+.sectionTitle {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--color-primary);
+}
+
+.description {
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--color-secondary);
+    white-space: pre-line;
+}
+
+.conferencesList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+@media (min-width: 760px) {
+    .conferencesList {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+.conferenceCard {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 16px;
+    background-color: var(--color-command);
+    border-radius: 12px;
+    border: 1px solid var(--color-hover);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+    min-height: 140px;
+}
+
+.conferenceCard:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    border-color: var(--color-primary);
+}
+
+.conferenceCardDiv {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 16px;
+    background-color: var(--color-command);
+    border-radius: 12px;
+    border: 1px solid var(--color-hover);
+    min-height: 140px;
+}
+
+.conferenceImageWrapper {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 8px;
+}
+
+.conferenceDateBadge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 1px 10px;
+    background-color: var(--color-hover);
+    color: var(--color-primary);
+    font-size: 10px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 1px solid var(--color-primary);
+}
+
+.resourcesContainer {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.resourceButton {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background-color: var(--color-command);
+    color: var(--color-primary);
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid var(--color-hover);
+    transition: all 0.2s ease;
+}
+
+.resourceButton:hover {
+    background-color: var(--color-hover);
+    transform: translateY(-2px);
+}
+
+.resourceIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+}
+
+.backLink {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 12px 24px;
+    background-color: var(--color-command);
+    color: var(--color-primary);
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid var(--color-hover);
+    transition: all 0.2s ease;
+}
+
+.backLink:hover {
+    background-color: var(--color-hover);
+}

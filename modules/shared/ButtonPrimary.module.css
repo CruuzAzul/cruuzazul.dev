@@ -1,0 +1,29 @@
+.buttonPrimary {
+    appearance: none;
+    background: transparent;
+    border: 0;
+    border-radius: var(--radius-border-radius);
+    color: var(--color-primary);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 0 0 0 -10px;
+    outline: 0;
+    padding: 8px 10px 8px;
+    text-decoration: none;
+    transition: background var(--transition-duration) ease-in-out,
+                color var(--transition-duration) ease-in-out;
+}
+
+.buttonPrimary:hover {
+    background: var(--color-hover);
+    color: var(--color-primary);
+    opacity: 1;
+}
+
+.buttonPrimary:hover :global(kbd) {
+    background: var(--color-primary);
+}
+

@@ -1,14 +1,11 @@
-import React from 'react';
-import styles from '../../modules/home/Hero.module.scss';
-import {Home} from '../../modules/home/Home';
+import { Metadata } from 'next'
+import ArticlesPage from '../../modules/articles/ArticlesPage'
 
-export default function Speaking() {
-  return (
-    <Home>
-      <div className={styles.hero}>
-        <h2>Coming soon...</h2>
-        <h1>Mickaël Alves</h1>
-      </div>
-    </Home>
-  );
+export const metadata: Metadata = {
+  title: 'Articles',
 }
+
+export default function Articles() {
+  return <ArticlesPage />
+}
+

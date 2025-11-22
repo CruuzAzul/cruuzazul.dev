@@ -1,0 +1,27 @@
+.home {
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    flex: 1 1;
+    min-height: 100%;
+}
+
+@media (min-width: 760px) {
+    .home {
+        width: 800px;
+    }
+}
+
+.companyLink {
+    text-decoration: none;
+    color: inherit;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.companyLogo {
+    display: inline-flex;
+    align-items: center;
+}
+

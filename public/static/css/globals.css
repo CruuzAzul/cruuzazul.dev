@@ -1,0 +1,250 @@
+/* ============================================
+   CSS Variables (Theme)
+   ============================================ */
+:root {
+    /* Colors */
+    --color-yellow: #ffff80;
+    --color-pink: #ff80bf;
+    --color-purple: #9580ff;
+    --color-red: #ff9580;
+    --color-orange: #ffca80;
+    --color-green: #8aff80;
+    --color-cyan: #80ffea;
+    --color-primary: #f2f2f2;
+    --color-secondary: #8f9ba8;
+    --color-background: #08070b;
+    --color-hover: #212024;
+    --color-command: rgba(255, 255, 255, 0.05);
+
+    /* Code/Syntax highlighting colors */
+    --color-code-background: #151417;
+    --color-comment: #6272a4;
+    --color-foreground: #f8f8f2;
+    --color-selection: #44475a;
+
+    /* Transparency variants (30%) */
+    --color-background-30: #282a3633;
+    --color-comment-30: #6272a433;
+    --color-foreground-30: #f8f8f233;
+    --color-selection-30: #44475a33;
+    --color-cyan-30: #80ffea33;
+    --color-green-30: #8aff8033;
+    --color-orange-30: #ffca8033;
+    --color-pink-30: #ff80bf33;
+    --color-purple-30: #9580ff33;
+    --color-red-30: #ff958033;
+    --color-yellow-30: #ffff8033;
+
+    /* Transparency variants (40%) */
+    --color-background-40: #282a3666;
+    --color-comment-40: #6272a466;
+    --color-foreground-40: #f8f8f266;
+    --color-selection-40: #44475a66;
+    --color-cyan-40: #80ffea66;
+    --color-green-40: #8aff8066;
+    --color-orange-40: #ffca8066;
+    --color-pink-40: #ff80bf66;
+    --color-purple-40: #9580ff66;
+    --color-red-40: #ff958066;
+    --color-yellow-40: #ffff8066;
+
+    /* Fonts */
+    --font-body: 'Biotif', sans-serif;
+    --font-code: 'Fira Code', monospace;
+    --font-heading: 'Neuzeit Grotesk Bold', sans-serif;
+
+    /* Spacing */
+    --space-nav-height-desktop: 60px;
+    --space-nav-height-mobile: 110px;
+
+    /* Transitions */
+    --transition-duration: 0.2s;
+
+    /* Radii */
+    --radius-border-radius: 8px;
+
+    /* Breakpoints (for reference, use in media queries) */
+    --breakpoint-bp1: 425px;
+    --breakpoint-bp2: 760px;
+    --breakpoint-bp3: 780px;
+    --breakpoint-bp4: 1024px;
+}
+
+/* ============================================
+   Font Face Declarations
+   ============================================ */
+@font-face {
+    font-family: 'Neuzeit Grotesk Bold';
+    src: url('/static/font/NeuzeitGrotesk-Bold.woff2') format('woff2'),
+        url('/static/font/NeuzeitGrotesk-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fira Code';
+    src: url('/static/font/FiraCode-Regular.woff2') format('woff2'),
+        url('/static/font/FiraCode-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Biotif';
+    src: url('/static/font/Biotif-Bold.woff2') format('woff2'),
+        url('/static/font/Biotif-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Biotif';
+    src: url('/static/font/Biotif-Book.woff2') format('woff2'),
+        url('/static/font/Biotif-Book.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Biotif';
+    src: url('/static/font/Biotif-Regular.woff2') format('woff2'),
+        url('/static/font/Biotif-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Biotif';
+    src: url('/static/font/Biotif-RegularItalic.woff2') format('woff2'),
+        url('/static/font/Biotif-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* ============================================
+   Global Styles
+   ============================================ */
+* {
+    font-family: var(--font-body);
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    background: var(--color-background);
+    color: var(--color-primary);
+}
+
+kbd {
+    color: var(--color-background);
+    background: var(--color-secondary);
+    padding: 1px 5px;
+    border-radius: 4px;
+    transition: background var(--transition-duration) ease-in-out;
+    font-family: var(--font-code);
+    font-size: 14px;
+}
+
+svg {
+    width: 32px;
+    height: 32px;
+    fill: white;
+}
+
+figure {
+    margin: 0;
+}
+
+twitterwidget {
+    margin: 0 auto;
+}
+
+code {
+    background: var(--color-code-background);
+    border-radius: var(--radius-border-radius);
+    color: var(--color-primary);
+    font-family: var(--font-code);
+    font-size: 15px;
+}
+
+:not(pre)>code {
+    padding: 4px;
+}
+
+h1 {
+    font-family: var(--font-heading);
+    font-size: 48px;
+    line-height: 50px;
+    margin: 0 0 20px;
+    color: var(--color-primary);
+}
+
+h2 {
+    color: var(--color-primary);
+    margin: 60px 0 0;
+    font-size: 24px;
+}
+
+h3,
+h3 a {
+    color: var(--color-primary);
+    font-size: 18px;
+    margin: 20px 0 0;
+}
+
+ul {
+    margin: 0;
+}
+
+img {
+    min-width: 100%;
+    max-width: 100%;
+}
+
+p {
+    margin: 20px 0;
+    color: var(--color-secondary);
+}
+
+strong {
+    color: var(--color-primary);
+    font-weight: 500;
+}
+
+blockquote {
+    border-left: 4px solid var(--color-hover);
+    color: var(--color-secondary);
+    font-style: italic;
+    margin: 0;
+    padding-left: 20px;
+}
+
+a {
+    border-bottom: 0.5px solid var(--color-secondary);
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: opacity var(--transition-duration) ease-in-out;
+}
+
+a:hover,
+a:focus {
+    opacity: 0.8;
+}
+
+/* ============================================
+   Media Query Mixins (for reference)
+   Use these in your CSS Modules:
+   
+   bp1: @media (min-width: 425px) { ... }
+   bp2: @media (min-width: 760px) { ... }
+   bp3: @media (max-width: 780px) { ... }
+   bp4: @media (max-width: 1024px) { ... }
+   ============================================ */

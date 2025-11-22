@@ -1,0 +1,91 @@
+/* Talk link */
+.talkLink {
+  text-decoration: none;
+  color: inherit;
+  border: none;
+}
+
+/* Talk */
+.talk {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  cursor: pointer;
+}
+
+.talk:first-child {
+  margin-left: 0;
+}
+
+/* Content wrapper */
+.contentWrapper {
+  position: relative;
+  width: 100%;
+}
+
+/* Content */
+.content {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  position: relative;
+}
+
+/* Image container */
+.imageContainer {
+  width: 100%;
+  height: 150px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageContainer :global(img) {
+  filter: grayscale(1);
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Title */
+.title {
+  color: var(--color-primary);
+  font-size: 18px;
+  margin: 0;
+}
+
+/* Anim container */
+.animContainer {
+  padding: 16px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  isolation: isolate;
+}
+
+/* Background wrapper */
+.backgroundWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+/* Anim hovered */
+.animHovered {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--color-hover);
+  border-radius: var(--radius-border-radius);
+  will-change: transform;
+}

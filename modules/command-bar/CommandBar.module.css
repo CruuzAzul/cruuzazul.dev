@@ -1,0 +1,109 @@
+/* Positioner */
+.positioner {
+  position: fixed;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  inset: 0px;
+  padding: 14vh 16px 16px;
+  background: rgba(0, 0, 0, 0.8);
+  box-sizing: border-box;
+}
+
+/* Search */
+.search {
+  padding: 12px 16px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  margin: 0;
+  background: var(--color-command);
+  color: var(--color-primary);
+}
+
+/* Group name */
+.groupName {
+  padding: 8px 16px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: var(--color-command);
+}
+
+/* Kbd */
+.kbd {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--color-secondary);
+  padding: 4px 8px;
+  text-transform: uppercase;
+}
+
+/* Shortcut */
+.shortcut {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 4px;
+}
+
+/* Action */
+.action {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+/* Action row */
+.actionRow {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Animator */
+.animator {
+  background-color: #1a1c1e;
+  max-width: 600px;
+  width: 100%;
+  color: var(--color-primary);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  .animator {
+    background-color: var(--color-command);
+    -webkit-backdrop-filter: saturate(300%) blur(25px);
+    backdrop-filter: saturate(300%) blur(25px);
+  }
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.animator :global(div div::-webkit-scrollbar) {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.animator :global(div div) {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Result item */
+.resultItem {
+  padding: 12px 16px;
+  background: var(--color-command);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  cursor: pointer;
+  color: var(--color-secondary);
+}
+
+.resultItemActive {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--color-primary);
+}
+

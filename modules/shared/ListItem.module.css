@@ -1,0 +1,129 @@
+/* Content wrapper */
+.contentWrapper {
+  position: relative;
+  z-index: 10;
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Item */
+.item {
+  border-bottom: 1px solid var(--color-hover);
+}
+
+.item:last-child {
+  border: 0;
+}
+
+/* Anchor */
+.anchor {
+  text-decoration: none;
+}
+
+/* Content left */
+.contentLeft {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  max-width: 500px;
+  gap: 10px;
+}
+
+/* Title */
+.title {
+  display: block;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: left;
+  margin-bottom: 4px;
+}
+
+/* Description */
+.description {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ADADAD;
+  font-weight: 400;
+}
+
+/* Date */
+.date {
+  color: var(--color-secondary);
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  min-width: 100px;
+  text-align: left;
+}
+
+/* Icon container */
+.iconContainer {
+  font-size: 24px;
+  margin-top: 2px;
+}
+
+/* Podcast icon */
+.podcastIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+/* Title row */
+.titleRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Anim container */
+.animContainer {
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px 0;
+  width: 100%;
+  opacity: 1;
+  text-decoration: none;
+  position: relative;
+}
+
+/* Anim container for articles */
+.articleItem .animContainer {
+  flex-direction: column;
+}
+
+@media (min-width: 760px) {
+  .articleItem .animContainer {
+    flex-direction: row;
+  }
+}
+
+/* Anim hovered */
+.animHovered {
+  position: absolute;
+  top: -1px;
+  left: -20px;
+  right: -20px;
+  bottom: -1px;
+  background: var(--color-hover);
+  border-radius: var(--radius-border-radius);
+  z-index: -1;
+  will-change: transform;
+}
+
+/* Article item */
+.articleItem {
+}
+

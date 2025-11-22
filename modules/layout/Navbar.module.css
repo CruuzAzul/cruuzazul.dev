@@ -1,0 +1,156 @@
+.header {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+    min-height: 59px;
+    width: 100%;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    margin-top: 13px;
+}
+
+@media (min-width: 760px) {
+    .header {
+        margin-top: 0;
+    }
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-flex;
+    position: relative;
+    top: 5px;
+}
+
+@media (min-width: 425px) {
+    .list {
+        justify-content: space-around;
+    }
+}
+
+.buttonHeader {
+    appearance: none;
+    background: transparent;
+    border: none;
+    border-radius: var(--radius-border-radius);
+    color: white;
+    cursor: pointer;
+    height: 34px;
+    padding: 0 10px;
+    transition: background var(--transition-duration) ease-in-out;
+}
+
+.buttonHeader:hover {
+    background: var(--color-hover);
+}
+
+.icon {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.buttonLogo {
+    font-weight: 700;
+    font-size: 22px;
+    text-decoration: none;
+    margin-left: 12px;
+    font-family: var(--font-heading);
+    padding: 10px;
+}
+
+.nav {
+    text-align: center;
+    flex: 1;
+    order: 2;
+    flex-basis: 100%;
+}
+
+@media (min-width: 760px) {
+    .nav {
+        order: 0;
+        flex-basis: initial;
+    }
+}
+
+@media (max-width: 780px) {
+    .nav {
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+}
+
+.navLink {
+    text-decoration: none;
+    border-bottom: none;
+}
+
+.aside {
+    display: flex;
+    align-items: center;
+    padding-right: 12px;
+    margin-left: auto;
+}
+
+.navWrapper {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: var(--radius-border-radius);
+    isolation: isolate;
+}
+
+.navWrapper:hover,
+.navWrapper:focus {
+    opacity: 1;
+}
+
+.navContainer {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+    border-radius: var(--radius-border-radius);
+}
+
+.navContainer::after {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 2px;
+    background: white;
+    border-radius: 1px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.navContainer.active::after {
+    opacity: 1;
+}
+
+.navHovered {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-border-radius);
+    z-index: -1;
+}
+
+.buttonHeaderPadding {
+    padding: 0 8px;
+}
