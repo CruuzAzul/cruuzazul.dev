@@ -1,4 +1,3 @@
-/* Content wrapper */
 .contentWrapper {
   position: relative;
   z-index: 10;
@@ -7,7 +6,6 @@
   justify-content: space-between;
 }
 
-/* Item */
 .item {
   border-bottom: 1px solid var(--color-hover);
 }
@@ -16,12 +14,10 @@
   border: 0;
 }
 
-/* Anchor */
 .anchor {
   text-decoration: none;
 }
 
-/* Content left */
 .contentLeft {
   display: flex;
   flex-direction: column;
@@ -30,7 +26,6 @@
   gap: 10px;
 }
 
-/* Title */
 .title {
   display: block;
   font-weight: 700;
@@ -40,7 +35,6 @@
   margin-bottom: 4px;
 }
 
-/* Description */
 .description {
   display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -53,7 +47,6 @@
   font-weight: 400;
 }
 
-/* Date */
 .date {
   color: var(--color-secondary);
   display: block;
@@ -63,13 +56,11 @@
   text-align: left;
 }
 
-/* Icon container */
 .iconContainer {
   font-size: 24px;
   margin-top: 2px;
 }
 
-/* Podcast icon */
 .podcastIcon {
   display: inline-flex;
   align-items: center;
@@ -78,14 +69,12 @@
   height: 24px;
 }
 
-/* Title row */
 .titleRow {
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
-/* Anim container */
 .animContainer {
   border: 0;
   cursor: pointer;
@@ -99,7 +88,6 @@
   position: relative;
 }
 
-/* Anim container for articles */
 .articleItem .animContainer {
   flex-direction: column;
 }
@@ -110,7 +98,6 @@
   }
 }
 
-/* Anim hovered */
 .animHovered {
   position: absolute;
   top: -1px;
@@ -123,7 +110,6 @@
   will-change: transform;
 }
 
-/* Article item */
 .articleItem {
 }
 

@@ -29,7 +29,7 @@ export default function Toast({ title, description, isSuccess, showToast, setSho
         <ToastPrimitive.Description className={styles.description}>{description}</ToastPrimitive.Description>
       </div>
       <ToastPrimitive.Close className={styles.close} aria-label="Close">
-        <span aria-hidden>×</span>
+        <span aria-hidden="true">×</span>
       </ToastPrimitive.Close>
     </ToastPrimitive.Root>
     <ToastPrimitive.Viewport className={styles.viewport} />

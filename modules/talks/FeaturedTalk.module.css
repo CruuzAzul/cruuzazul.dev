@@ -1,11 +1,9 @@
-/* Talk link */
 .talkLink {
   text-decoration: none;
   color: inherit;
   border: none;
 }
 
-/* Talk */
 .talk {
   display: flex;
   flex-direction: column;
@@ -17,13 +15,11 @@
   margin-left: 0;
 }
 
-/* Content wrapper */
 .contentWrapper {
   position: relative;
   width: 100%;
 }
 
-/* Content */
 .content {
   display: flex;
   flex-direction: column;
@@ -31,35 +27,27 @@
   position: relative;
 }
 
-/* Image container */
 .imageContainer {
   width: 100%;
   height: 150px;
   margin-bottom: 12px;
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.imageContainer :global(img) {
-  filter: grayscale(1);
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover;
-  object-position: center;
-  display: block;
+  position: relative;
   border-radius: 8px;
 }
 
-/* Title */
+.imageContainer .image {
+  filter: grayscale(1);
+  object-fit: cover;
+  object-position: center;
+}
+
 .title {
   color: var(--color-primary);
   font-size: 18px;
   margin: 0;
 }
 
-/* Anim container */
 .animContainer {
   padding: 16px;
   position: relative;
@@ -68,7 +56,6 @@
   isolation: isolate;
 }
 
-/* Background wrapper */
 .backgroundWrapper {
   position: absolute;
   top: 0;
@@ -78,7 +65,6 @@
   pointer-events: none;
 }
 
-/* Anim hovered */
 .animHovered {
   position: absolute;
   top: 0;

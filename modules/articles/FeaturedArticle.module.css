@@ -1,10 +1,8 @@
-/* Content wrapper */
 .contentWrapper {
   position: relative;
   z-index: 1;
 }
 
-/* Article */
 .article {
   border: 0;
   width: 370px;
@@ -20,25 +18,25 @@
   margin-left: 0;
 }
 
-/* Container */
 .container {
   display: flex;
   flex-direction: column;
 }
 
-/* Image container */
 .imageContainer {
   border-radius: 8px;
   width: 370px;
   height: 180px;
   margin-bottom: 20px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  position: relative;
+  overflow: hidden;
+}
+
+.imageContainer .image {
+  object-fit: cover;
   filter: grayscale(1);
 }
 
-/* Content */
 .content {
   max-width: 450px;
   margin-right: 20px;
@@ -51,13 +49,11 @@
   }
 }
 
-/* Title */
 .title {
   color: var(--color-primary);
   margin: 0;
 }
 
-/* Description */
 .description {
   color: var(--color-secondary);
   display: -webkit-box;
@@ -67,7 +63,6 @@
   overflow: hidden;
 }
 
-/* Stats */
 .stats {
   margin: 5px 0 0;
   color: var(--color-primary);
@@ -78,14 +73,12 @@
   font-size: 12px;
 }
 
-/* Anim container */
 .animContainer {
   position: relative;
   width: 100%;
   padding: 20px;
 }
 
-/* Anim hovered */
 .animHovered {
   position: absolute;
   top: 0;

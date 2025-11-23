@@ -1,5 +1,5 @@
 import type { Podcast } from '../../modules/podcasts/types/Podcast';
-import ZenikastHypeDrivenDevelopment from '../../public/static/images/talks/zenikast-hype-driven-development.png';
+import ZenikastHypeDrivenDevelopment from '../../public/static/images/talks/zenikast-hype-driven-development.webp';
 import Zenika from '../../public/static/images/conferenceLogos/zenika.svg';
 
 export const HypeDrivenDevelopment: Podcast = {

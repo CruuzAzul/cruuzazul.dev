@@ -10,7 +10,6 @@ import remotionIcon from '../../public/static/icons/remotion.json'
 import codeInTheDarkIcon from '../../public/static/icons/code-in-the-dark.json'
 import sourceIcon from '../../public/static/icons/source.json'
 
-// Mapping statique des icônes pour le tree-shaking et la sécurité des types
 const iconMap = {
   'remotion': remotionIcon,
   'code-in-the-dark': codeInTheDarkIcon,

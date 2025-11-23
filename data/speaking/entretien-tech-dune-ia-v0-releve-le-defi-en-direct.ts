@@ -1,5 +1,5 @@
-import v0 from '../../public/static/images/talks/v0.png';
-import DevfestStrasbourg2024 from '../../public/static/images/conferenceLogos/devfest-strasbourg-2024.png';
+import v0 from '../../public/static/images/talks/v0.webp';
+import DevfestStrasbourg2024 from '../../public/static/images/conferenceLogos/devfest-strasbourg-2024.webp';
 import Zenika from '../../public/static/images/conferenceLogos/zenika.svg';
 import type { Talk } from '../../modules/talks/types/Talk';
 

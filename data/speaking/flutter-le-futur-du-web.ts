@@ -1,4 +1,4 @@
-import Flutter from '../../public/static/images/talks/flutter.png';
+import Flutter from '../../public/static/images/talks/flutter.webp';
 import Zenika from '../../public/static/images/conferenceLogos/zenika.svg';
 import type { Talk } from '../../modules/talks/types/Talk';
 

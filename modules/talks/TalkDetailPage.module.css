@@ -12,12 +12,13 @@
     margin-bottom: 24px;
     border-radius: 12px;
     overflow: hidden;
+    position: relative;
+    aspect-ratio: 16 / 9;
 }
 
-.talkImage img {
+.talkImageContent {
+    object-fit: cover;
     filter: grayscale(0.3);
-    border-radius: 0 0 12px 12px;
-    display: block;
 }
 
 .content {}

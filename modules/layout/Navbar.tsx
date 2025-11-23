@@ -32,7 +32,7 @@ export default function Navbar() {
             {pages.map(page => {
               const path = page === 'Home' ? '/' : `/${page.toLowerCase()}`
               const isHovered = hovered === page
-              const isActive = pathname === path
+              const isActive = pathname === path || (page !== 'Home' && pathname.startsWith(path + '/'))
 
               return (
                 <li key={page}>

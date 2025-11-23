@@ -13,10 +13,13 @@ const nextConfig: NextConfig = {
         hostname: 'avatars.githubusercontent.com',
       },
     ],
+    formats: ['image/avif', 'image/webp'],
   },
   experimental: {
-    optimizePackageImports: ['lottie-react'],
+    optimizePackageImports: ['lottie-react', 'framer-motion', 'date-fns'],
   },
+  compress: true,
+  poweredByHeader: false,
 };
 
 export default nextConfig;

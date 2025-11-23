@@ -30,9 +30,9 @@ export default function AboutPage() {
         <div className={styles.section}>
           <Image
             alt="Zeno"
-            src="/static/images/micka.jpg"
-            width="336"
-            height="336"
+            src="/static/images/micka.webp"
+            width="672"
+            height="1008"
             placeholder="blur"
             blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAP0lEQVQImQE0AMv/AFBQUJKSkqmpqaOjowCurq7v7+/Jycm5ubkA////jIyMn5+fg4ODADAwMD09PWlpaQAAAApRGnEHblMWAAAAAElFTkSuQmCC"
             priority
@@ -68,7 +68,7 @@ export default function AboutPage() {
               as="a"
               download
               role="button"
-              href="/static/images/micka.jpg"
+              href="/static/images/micka.webp"
               style={{ display: 'inline-flex', justifyContent: 'center', alignItems: 'center' }}
               onClick={downloadHeadshot}
               onMouseEnter={() => downloadRef.current?.play()}

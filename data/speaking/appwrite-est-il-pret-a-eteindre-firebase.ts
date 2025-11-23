@@ -1,11 +1,11 @@
-import Appwrite from '../../public/static/images/talks/appwrite.png';
-import LyonJS from '../../public/static/images/conferenceLogos/lyonJs.png';
-import Devoxx from '../../public/static/images/conferenceLogos/devoxx.png';
-import SnowCamp from '../../public/static/images/conferenceLogos/snowcamp.png';
-import VeryTechTrip from '../../public/static/images/conferenceLogos/vtt.png';
+import Appwrite from '../../public/static/images/talks/appwrite.webp';
+import LyonJS from '../../public/static/images/conferenceLogos/lyonJs.webp';
+import Devoxx from '../../public/static/images/conferenceLogos/devoxx.webp';
+import SnowCamp from '../../public/static/images/conferenceLogos/snowcamp.webp';
+import VeryTechTrip from '../../public/static/images/conferenceLogos/vtt.webp';
 import Mixit from '../../public/static/images/conferenceLogos/mixit.svg';
 import Breizhcamp from '../../public/static/images/conferenceLogos/breizhcamp.svg';
-import DevFestDijon from '../../public/static/images/conferenceLogos/devfestDijon.png';
+import DevFestDijon from '../../public/static/images/conferenceLogos/devfestDijon.webp';
 import Zenika from '../../public/static/images/conferenceLogos/zenika.svg';
 import type { Talk } from '../../modules/talks/types/Talk';
 

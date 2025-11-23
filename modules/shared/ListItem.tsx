@@ -17,7 +17,6 @@ interface ListItemProps {
 
 export default function ListItem(props: ListItemProps) {
   const lottieRef = useRef<any>(null)
-  // Articles
   if (props.href.charAt(0) === '/' && !props.href.includes('/podcasts/')) {
     return (
       <li className={`${styles.item} ${styles.articleItem}`}>
@@ -33,7 +32,6 @@ export default function ListItem(props: ListItemProps) {
     )
   }
 
-  // Podcasts (liens internes)
   if (props.href.includes('/podcasts/')) {
     return (
       <li className={styles.item}>
@@ -64,7 +62,6 @@ export default function ListItem(props: ListItemProps) {
     )
   }
 
-  // Podcasts (liens externes)
   return (
     <li className={styles.item}>
       <a href={props.href} target="_blank" rel="noopener noreferrer" className={styles.anchor} onMouseEnter={() => lottieRef.current?.play()} onMouseLeave={() => lottieRef.current?.stop()}>

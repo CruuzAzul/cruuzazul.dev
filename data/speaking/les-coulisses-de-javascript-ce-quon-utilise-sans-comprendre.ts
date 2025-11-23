@@ -1,10 +1,10 @@
-import JavaScriptCoulisses from '../../public/static/images/talks/coulisses-javascript.png';
-import JavaScriptCoulissesFeatured from '../../public/static/images/talks/coulisses-javascript-featured.jpg';
+import JavaScriptCoulisses from '../../public/static/images/talks/coulisses-javascript.webp';
+import JavaScriptCoulissesFeatured from '../../public/static/images/talks/coulisses-javascript-featured.webp';
 import DevQuest from '../../public/static/images/conferenceLogos/devquest.svg';
 import SunnyTech from '../../public/static/images/conferenceLogos/sunnyTech.svg';
-import BDXIO from '../../public/static/images/conferenceLogos/bdxio.png';
-import DevfestToulouse from '../../public/static/images/conferenceLogos/defestToulouse.png';
-import DevfestDijon from '../../public/static/images/conferenceLogos/devfestDijon.png';
+import BDXIO from '../../public/static/images/conferenceLogos/bdxio.webp';
+import DevfestToulouse from '../../public/static/images/conferenceLogos/defestToulouse.webp';
+import DevfestDijon from '../../public/static/images/conferenceLogos/devfestDijon.webp';
 import type { Talk } from '../../modules/talks/types/Talk';
 
 export const LesCoulissesDeJavaScriptCeQuonUtiliseSansComprendre: Talk = {

@@ -1,7 +1,7 @@
-import ReactCompiler from '../../public/static/images/talks/react-compiler.png';
-import ReactCompilerFeatured from '../../public/static/images/talks/react-compiler-featured.jpg';
+import ReactCompiler from '../../public/static/images/talks/react-compiler.webp';
+import ReactCompilerFeatured from '../../public/static/images/talks/react-compiler-featured.webp';
 import TouraineTech from '../../public/static/images/conferenceLogos/touraineTech.svg';
-import Devoxx from '../../public/static/images/conferenceLogos/devoxx.png';
+import Devoxx from '../../public/static/images/conferenceLogos/devoxx.webp';
 import DevfestNantes2024 from '../../public/static/images/conferenceLogos/devfest-nantes-2024.svg';
 import type { Talk } from '../../modules/talks/types/Talk';
 

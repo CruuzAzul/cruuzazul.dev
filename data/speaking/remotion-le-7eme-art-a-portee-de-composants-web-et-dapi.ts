@@ -1,9 +1,9 @@
-import Remotion from '../../public/static/images/talks/remotion.png';
-import RemotionFeatured from '../../public/static/images/talks/remotion-featured.jpg';
+import Remotion from '../../public/static/images/talks/remotion.webp';
+import RemotionFeatured from '../../public/static/images/talks/remotion-featured.webp';
 import Mixit from '../../public/static/images/conferenceLogos/mixit.svg';
-import SnowCamp from '../../public/static/images/conferenceLogos/snowcamp.png';
+import SnowCamp from '../../public/static/images/conferenceLogos/snowcamp.webp';
 import TouraineTech from '../../public/static/images/conferenceLogos/touraineTech.svg';
-import LyonJS from '../../public/static/images/conferenceLogos/lyonJs.png';
+import LyonJS from '../../public/static/images/conferenceLogos/lyonJs.webp';
 import Bedrock from '../../public/static/images/conferenceLogos/bedrock.svg';
 import type { Talk } from '../../modules/talks/types/Talk';
 

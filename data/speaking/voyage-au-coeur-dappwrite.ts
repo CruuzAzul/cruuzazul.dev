@@ -1,8 +1,8 @@
-import AppwriteWorkshop from '../../public/static/images/talks/appwrite-workshop.png';
+import AppwriteWorkshop from '../../public/static/images/talks/appwrite-workshop.webp';
 import DevfestNantes2023 from '../../public/static/images/conferenceLogos/devfest-nantes-2023.svg';
-import DevfestLille from '../../public/static/images/conferenceLogos/devfest-lille.png';
-import DevfestStrasbourg2023 from '../../public/static/images/conferenceLogos/devfest-strasbourg-2023.png';
-import SnowCamp from '../../public/static/images/conferenceLogos/snowcamp.png';
+import DevfestLille from '../../public/static/images/conferenceLogos/devfest-lille.webp';
+import DevfestStrasbourg2023 from '../../public/static/images/conferenceLogos/devfest-strasbourg-2023.webp';
+import SnowCamp from '../../public/static/images/conferenceLogos/snowcamp.webp';
 import Breizhcamp from '../../public/static/images/conferenceLogos/breizhcamp.svg';
 import type { Workshop } from '../../modules/talks/types/Workshop';
 

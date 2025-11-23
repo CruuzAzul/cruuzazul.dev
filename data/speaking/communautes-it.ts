@@ -1,5 +1,5 @@
 import type { Podcast } from '../../modules/podcasts/types/Podcast';
-import ZenikastCommunautesIt from '../../public/static/images/talks/zenikast-communautes-it.png';
+import ZenikastCommunautesIt from '../../public/static/images/talks/zenikast-communautes-it.webp';
 import Zenika from '../../public/static/images/conferenceLogos/zenika.svg';
 
 export const CommunautesIt: Podcast = {

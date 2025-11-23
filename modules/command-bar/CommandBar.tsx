@@ -216,9 +216,9 @@ const ResultItem = forwardRef<HTMLDivElement, ResultItemProps>(({ action, active
         </div>
       </div>
       {action.shortcut?.length ? (
-        <div className={styles.shortcut} aria-hidden>
+        <div className={styles.shortcut} aria-hidden="true">
           {action.shortcut.map(shortcut => (
-            <kbd key={shortcut} className={styles.kbd}>{shortcut}</kbd>
+            <kbd key={shortcut} className={styles.kbd} tabIndex={-1}>{shortcut}</kbd>
           ))}
         </div>
       ) : null}

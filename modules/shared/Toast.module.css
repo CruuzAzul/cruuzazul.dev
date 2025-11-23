@@ -20,7 +20,6 @@
   }
 }
 
-/* Root */
 .root {
   background: var(--color-hover);
   border-radius: 4px;
@@ -43,26 +42,22 @@
   animation: slideDownAndFade 100ms ease-in forwards;
 }
 
-/* Icon container */
 .iconContainer {
   font-size: 16px;
   margin-top: -2px;
   margin-right: 8px;
 }
 
-/* Title */
 .title {
   color: var(--color-primary);
   line-height: 28px;
 }
 
-/* Description */
 .description {
   margin-top: -5px;
   line-height: 28px;
 }
 
-/* Close */
 .close {
   position: absolute;
   right: 0;
@@ -80,7 +75,6 @@
   color: var(--color-primary);
 }
 
-/* Viewport */
 .viewport {
   position: fixed;
   bottom: 20px;

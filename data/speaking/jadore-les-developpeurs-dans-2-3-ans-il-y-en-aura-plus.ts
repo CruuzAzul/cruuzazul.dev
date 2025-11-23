@@ -1,4 +1,4 @@
-import NoCode from '../../public/static/images/talks/no-code.png';
+import NoCode from '../../public/static/images/talks/no-code.webp';
 import Zenika from '../../public/static/images/conferenceLogos/zenika.svg';
 import type { Talk } from '../../modules/talks/types/Talk';
 

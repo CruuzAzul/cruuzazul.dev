@@ -28,7 +28,6 @@ export default function BlogpostLayout({ children, title, image, date }: Blogpos
       if (!ticking) {
         window.requestAnimationFrame(() => {
           const scrollY = window.scrollY
-          // Parallax effect: move the image slower than the scroll (0.5x speed)
           const parallaxY = scrollY * 0.5
           setTransform(`translateY(${parallaxY}px)`)
           ticking = false
@@ -37,12 +36,11 @@ export default function BlogpostLayout({ children, title, image, date }: Blogpos
       }
     }
 
-    // Only apply parallax on desktop (above 1024px)
     const checkDesktop = () => window.innerWidth >= 1024
     
     if (checkDesktop()) {
       window.addEventListener('scroll', handleScroll, { passive: true })
-      handleScroll() // Initial call
+      handleScroll()
     }
 
     const handleResize = () => {

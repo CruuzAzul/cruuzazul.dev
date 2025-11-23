@@ -29,10 +29,13 @@ export default function TalkDetailPage({ slug }: { slug: string }) {
             <Image
               src={talk.image}
               alt={talk.title}
-              width={800}
-              height={450}
-              style={{ width: '100%', height: 'auto' }}
-              unoptimized
+              fill
+              className={styles.talkImageContent}
+              priority
+              fetchPriority="high"
+              placeholder="blur"
+              blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
+              sizes="(max-width: 900px) 100vw, 900px"
             />
           </div>
         </div>
@@ -50,9 +53,11 @@ export default function TalkDetailPage({ slug }: { slug: string }) {
                 const CardContent = (
                   <>
                     <div className={styles.conferenceImageWrapper}>
-                      <img
-                        src={conf.image.src}
+                      <Image
+                        src={conf.image}
                         alt={conf.name}
+                        width={conf.image.width}
+                        height={conf.image.height}
                         style={{
                           filter: 'brightness(0) invert(1)',
                           maxWidth: '100%',
@@ -61,6 +66,9 @@ export default function TalkDetailPage({ slug }: { slug: string }) {
                           height: 'auto',
                           objectFit: 'contain',
                         }}
+                        placeholder="blur"
+                        blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
+                        loading="lazy"
                       />
                     </div>
                     <span className={styles.conferenceDateBadge}>{conf.date}</span>

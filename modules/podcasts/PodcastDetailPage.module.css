@@ -1,15 +1,12 @@
-/* Container */
 .container {
   max-width: 900px;
   margin: 0 auto;
 }
 
-/* Header */
 .header {
   margin-bottom: 40px;
 }
 
-/* Podcast image */
 .podcastImage {
   width: 100%;
   margin-bottom: 24px;
@@ -21,16 +18,13 @@
   filter: grayscale(0.3);
 }
 
-/* Content */
 .content {
 }
 
-/* Section */
 .section {
   margin-bottom: 48px;
 }
 
-/* Section title */
 .sectionTitle {
   font-size: 24px;
   font-weight: 700;
@@ -38,7 +32,6 @@
   color: var(--color-primary);
 }
 
-/* Description */
 .description {
   font-size: 16px;
   line-height: 1.8;
@@ -46,7 +39,6 @@
   white-space: pre-line;
 }
 
-/* Platforms container */
 .platformsContainer {
   display: flex;
   flex-wrap: wrap;
@@ -54,7 +46,6 @@
   justify-content: center;
 }
 
-/* Platform button */
 .platformButton {
   display: flex;
   align-items: center;
@@ -81,7 +72,6 @@
   filter: brightness(0) saturate(100%) invert(100%) drop-shadow(0 0 8px rgba(255, 255, 255, 0.3));
 }
 
-/* Platform icon */
 .platformIcon {
   font-size: 20px;
   display: flex;
@@ -94,12 +84,10 @@
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-/* Platform name */
 .platformName {
   flex: 1;
 }
 
-/* Back link */
 .backLink {
   display: inline-block;
   margin-top: 40px;

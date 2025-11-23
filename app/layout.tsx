@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     default: 'Mickaël Alves',
     template: '%s | Mickaël Alves',
   },
-  description: '👋🏼 Welcome to Mickaël Alves site! Web maker, app builder, and passionate speaker on web dev, design, and new tech. Web consultant at @Zenika 🔴, DX Engineer at @BedrockStreaming 📺. Speaker, educator, co-organizer of @LyonJS 🦁, @Appwrite Hero 🦸🏼‍♂️ & @Remotion Expert 🎬.',
+  description: "👋🏼 Hey, I'm Mickaël Alves, Tech Lead Frontend at Zenika & Bedrock Streaming. I'm passionate about web technologies, tooling and especially Developer Experience. Speaker, co-organizer of LyonJS & DevFest Lyon.",
   authors: [{ name: 'Mickaël Alves' }],
   openGraph: {
     type: 'website',
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     url: 'https://cruuzazul.dev',
     siteName: 'Mickaël Alves',
     title: 'Mickaël Alves',
-    description: '👋🏼 Welcome to Mickaël Alves site! Web maker, app builder, and passionate speaker on web dev, design, and new tech. Web consultant at @Zenika 🔴, DX Engineer at @BedrockStreaming 📺. Speaker, educator, co-organizer of @LyonJS 🦁, @Appwrite Hero 🦸🏼‍♂️ & @Remotion Expert 🎬.',
+    description: "👋🏼 Hey, I'm Mickaël Alves, Tech Lead Frontend at Zenika & Bedrock Streaming. I'm passionate about web technologies, tooling and especially Developer Experience. Speaker, co-organizer of LyonJS & DevFest Lyon.",
     images: [
       {
         url: '/og-image.png',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Mickaël Alves',
-    description: '👋🏼 Welcome to Mickaël Alves site! Web maker, app builder, and passionate speaker on web dev, design, and new tech.',
+    description: "👋🏼 Hey, I'm Mickaël Alves, Tech Lead Frontend at Zenika & Bedrock Streaming. I'm passionate about web technologies, tooling and especially Developer Experience. Speaker, co-organizer of LyonJS & DevFest Lyon.",
     images: ['/og-image.png'],
   },
   icons: {
@@ -69,7 +69,6 @@ export default function RootLayout({
           type="font/woff2"
           crossOrigin="anonymous"
         />
-        {/* Critical CSS to prevent FOUC */}
         <style
           dangerouslySetInnerHTML={{
             __html: `

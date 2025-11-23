@@ -1,6 +1,6 @@
-import TanStackQuery from '../../public/static/images/talks/tanstack-query.png';
-import DevfestNantes2025 from '../../public/static/images/conferenceLogos/devfest-nantes-2025.png';
-import SnowCamp from '../../public/static/images/conferenceLogos/snowcamp.png';
+import TanStackQuery from '../../public/static/images/talks/tanstack-query.webp';
+import DevfestNantes2025 from '../../public/static/images/conferenceLogos/devfest-nantes-2025.webp';
+import SnowCamp from '../../public/static/images/conferenceLogos/snowcamp.webp';
 import type { Talk } from '../../modules/talks/types/Talk';
 
 export const RevolutionTanStackQueryEnfinUneBonneGestionDetat: Talk = {

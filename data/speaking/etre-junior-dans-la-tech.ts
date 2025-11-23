@@ -1,5 +1,5 @@
 import type { Podcast } from '../../modules/podcasts/types/Podcast';
-import ZenikastJuniorDansLaTech from '../../public/static/images/talks/zenikast-junior-dans-la-tech.jpg';
+import ZenikastJuniorDansLaTech from '../../public/static/images/talks/zenikast-junior-dans-la-tech.webp';
 import Zenika from '../../public/static/images/conferenceLogos/zenika.svg';
 
 export const EtreJuniorDansLaTech: Podcast = {
