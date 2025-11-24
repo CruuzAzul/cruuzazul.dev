@@ -6,7 +6,7 @@ import Link from 'next/link'
 import BaseLayout from '../layout/BaseLayout'
 import { Box } from '../shared/Box'
 import FeaturedTalk from './FeaturedTalk'
-import { speaking as talks } from '../../data/speaking'
+import { speaking } from '../../data/speaking'
 import type { Talk } from './types/Talk'
 import type { Conference } from './types/Conference'
 import { generateSlug } from '../../utils/slug'
@@ -16,6 +16,9 @@ import styles from './TalksPage.module.css'
 export default function TalksPage() {
   const [viewMode, setViewMode] = useState<'talks' | 'conferences'>('conferences')
   const [hoveredTalk, setHoveredTalk] = useState<string | number>('')
+
+  // Filtrer pour exclure les podcasts
+  const talks = speaking.filter(item => 'format' in item && item.format !== 'Podcast')
 
   const renderFeatured = () => {
     return (
@@ -39,6 +42,8 @@ export default function TalksPage() {
     talks.forEach(talk => {
       talk.conferences.forEach((conf: Conference) => {
         const year = conf.date
+          ? conf.date.substring(0, 4)
+          : (conf.year || new Date().getFullYear().toString())
         if (!conferencesByYear[year]) {
           conferencesByYear[year] = []
         }
@@ -48,6 +53,7 @@ export default function TalksPage() {
           talkSlug: generateSlug(talk.title),
           link: conf.link,
           image: conf.image,
+          date: conf.date,
         })
       })
     })
@@ -63,23 +69,50 @@ export default function TalksPage() {
         confMap[item.conferenceName].push(item)
       })
 
+      const sortedConfs = Object.entries(confMap).sort(([nameA, itemsA], [nameB, itemsB]) => {
+        const dateA = itemsA[0]?.date
+        const dateB = itemsB[0]?.date
+        if (!dateA && !dateB) return 0
+        if (!dateA) return 1  // Sans date à la fin
+        if (!dateB) return -1
+        return dateB.localeCompare(dateA)
+      })
+
       return (
         <div key={year} className={styles.yearSection}>
           <h3 className={styles.yearTitle}>{year}</h3>
-          {Object.entries(confMap).map(([confName, items]) => (
-            <div key={confName} className={styles.conferenceGroup}>
-              <h4 className={styles.conferenceName}>{confName}</h4>
-              <ul className={styles.talksList}>
-                {items.map((item, idx) => (
-                  <li key={idx} className={styles.talksListItem}>
-                    <Link href={`/talks/${item.talkSlug}`} style={{ textDecoration: 'none', color: 'inherit' }}>
-                      {item.talkTitle}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+          {sortedConfs.map(([confName, items]) => {
+            const sortedItems = [...items].sort((a, b) => {
+              if (!a.date && !b.date) return 0
+              if (!a.date) return 1
+              if (!b.date) return -1
+              return b.date.localeCompare(a.date)
+            })
+
+            const confDate = sortedItems[0]?.date
+              ? new Date(sortedItems[0].date).toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' })
+              : null
+
+            return (
+              <div key={confName} className={styles.conferenceGroup}>
+                <h4 className={styles.conferenceName}>
+                  {confName}
+                  {confDate && (
+                    <span className={styles.talkDate}> - {confDate}</span>
+                  )}
+                </h4>
+                <ul className={styles.talksList}>
+                  {sortedItems.map((item, idx) => (
+                    <li key={idx} className={styles.talksListItem}>
+                      <Link href={`/talks/${item.talkSlug}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+                        {item.talkTitle}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )
+          })}
         </div>
       )
     })

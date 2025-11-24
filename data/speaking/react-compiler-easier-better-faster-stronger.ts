@@ -31,19 +31,19 @@ export const ReactCompilerEasierBetterFasterStronger: Talk = {
     {
       name: 'Devoxx France',
       link: 'https://www.devoxx.fr/agenda-2025/talk/react-compiler-easier-better-faster-stronger/',
-      date: '2025',
+      date: '2025-04-18',
       image: Devoxx,
     },
     {
       name: 'Touraine Tech',
       link: '',
-      date: '2025',
+      date: '2025-02-07',
       image: TouraineTech,
     },
     {
       name: 'Devfest Nantes',
       link: 'https://devfest.gdgnantes.com/sessions/react_compiler___easier__better__faster__stronger___/',
-      date: '2024',
+      date: '2024-10-17',
       image: DevfestNantes2024,
     },
   ],

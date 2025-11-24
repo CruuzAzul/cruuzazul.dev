@@ -26,7 +26,8 @@ export const FlutterLeFuturDuWeb: Talk = {
     {
       name: 'Conférence interne Zenika',
       link: 'https://youtu.be/mdGMBIYmi6c',
-      date: '2022',
+      date: null,
+      year: '2022',
       image: Zenika,
     },
   ],

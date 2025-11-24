@@ -199,3 +199,15 @@
   color: var(--color-secondary);
   line-height: 1.6;
 }
+
+.talkDate {
+  font-size: 12px;
+  color: var(--color-secondary);
+}
+
+.talkDate {
+  font-size: 12px;
+  color: var(--color-secondary);
+  opacity: 0.7;
+  font-weight: 400;
+}

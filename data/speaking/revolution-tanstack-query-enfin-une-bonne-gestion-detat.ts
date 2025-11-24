@@ -34,13 +34,13 @@ export const RevolutionTanStackQueryEnfinUneBonneGestionDetat: Talk = {
         {
             name: 'DevFest Nantes',
             link: '',
-            date: '2025',
+            date: '2025-10-16',
             image: DevfestNantes2025,
         },
         {
             name: 'SnowCamp',
             link: '',
-            date: '2026',
+            date: '2026-01-15',
             image: SnowCamp,
         },
     ],

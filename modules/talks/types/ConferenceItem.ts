@@ -6,5 +6,6 @@ export interface ConferenceItem {
   talkSlug: string
   link?: string
   image: StaticImageData
+  date: string | null
 }
 

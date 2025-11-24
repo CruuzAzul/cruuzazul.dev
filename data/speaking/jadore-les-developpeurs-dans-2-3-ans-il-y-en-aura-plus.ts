@@ -30,7 +30,8 @@ export const JadoreLesDeveloppeursDans23AnsIlYEnAuraPlus: Talk = {
     {
       name: 'Conférence interne Zenika',
       link: 'https://youtu.be/mA6dmVYBfdA',
-      date: '2023',
+      date: null,
+      year: '2023',
       image: Zenika,
     },
   ],

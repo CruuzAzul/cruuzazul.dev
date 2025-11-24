@@ -33,7 +33,8 @@ export const HypeDrivenDevelopment: Podcast = {
   conferences: [
     {
       name: 'Conférence interne Zenika',
-      date: '2024',
+      date: null,
+      year: '2024',
       image: Zenika,
     },
   ],

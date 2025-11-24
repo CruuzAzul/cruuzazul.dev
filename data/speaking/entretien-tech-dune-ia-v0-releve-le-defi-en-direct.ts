@@ -29,13 +29,14 @@ export const EntretienTechDuneIaV0ReleveLeDefiEnDirect: Talk = {
     {
       name: 'Devfest Strasbourg',
       link: '',
-      date: '2024',
+      date: '2024-11-21',
       image: DevfestStrasbourg2024,
     },
     {
       name: 'Conférence interne Zenika',
       link: 'https://youtu.be/mA6dmVYBfdA',
-      date: '2023',
+      date: null,
+      year: '2023',
       image: Zenika,
     },
   ],
