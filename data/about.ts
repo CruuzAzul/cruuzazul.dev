@@ -1,4 +1,6 @@
-const items = [
+import type { AboutItem } from '../modules/about/types/AboutItem'
+
+const items: AboutItem[] = [
   {
     jobTitle: 'Tech Lead Platform & DevEx',
     company: 'Bedrock Streaming',
