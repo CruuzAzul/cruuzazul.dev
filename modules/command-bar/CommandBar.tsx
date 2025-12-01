@@ -137,9 +137,11 @@ export default function CommandBar(props: CommandBarProps) {
 
   return (
     <>
+      {/* @ts-expect-error - KBar types are not compatible with React 19 */}
       <KBarProvider actions={actions}>
         <KBarPortal>
           <KBarPositioner className={styles.positioner}>
+            {/* @ts-expect-error - KBar types are not compatible with React 19 */}
             <KBarAnimator className={styles.animator}>
               <KBarSearch placeholder="Type a command or search…" className={styles.search} />
               <RenderResults />

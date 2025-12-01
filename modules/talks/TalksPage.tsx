@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, Suspense } from 'react'
 import { useQueryState, parseAsStringLiteral } from 'nuqs'
 import { LayoutGroup, motion } from 'framer-motion'
 import Link from 'next/link'
@@ -14,7 +14,7 @@ import { generateSlug } from '../../utils/slug'
 import type { ConferenceItem } from './types/ConferenceItem'
 import styles from './TalksPage.module.css'
 
-export default function TalksPage() {
+function TalksContent() {
   const [viewMode, setViewMode] = useQueryState(
     'view',
     parseAsStringLiteral(['talks', 'conferences'] as const).withDefault('conferences')
@@ -205,5 +205,21 @@ function TalkItem({ talk }: { talk: Talk }) {
   )
 }
 
+export default function TalksPage() {
+  return (
+    <Suspense fallback={
+      <BaseLayout
+        title="Talks // Mickaël Alves"
+        tagline="Confs. Meetups. Events."
+        primaryColor="purple"
+        secondaryColor="cyan"
+      >
+        <p>Loading...</p>
+      </BaseLayout>
+    }>
+      <TalksContent />
+    </Suspense>
+  )
+}
 
 
