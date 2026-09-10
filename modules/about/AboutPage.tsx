@@ -157,7 +157,8 @@ export default function AboutPage() {
       durationStr = `${durationObj.years} yr `;
     }
 
-    durationStr += `${durationObj.months} months`;
+    // date-fns v3+ omits zero fields from intervalToDuration results
+    durationStr += `${durationObj.months ?? 0} months`;
 
     return durationStr;
   };
